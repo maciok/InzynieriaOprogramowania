@@ -180,25 +180,34 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="DTO\KartaKredytowaDTO.cs" />
+    <Compile Include="DTO\UzytkownikDTO.cs" />
     <Compile Include="Models\DaneHoteloweModel.cs" />
-    <Compile Include="Models\IDaneHoteloweModel.cs" />
-    <Compile Include="Models\IZarzadzanieHotelami.cs" />
+    <Compile Include="Models\Interfaces\IDaneHoteloweModel.cs" />
+    <Compile Include="Models\Interfaces\IZarzadzanieHotelami.cs" />
+    <Compile Include="Models\Interfaces\IUzytkownikModel.cs" />
+    <Compile Include="Models\UzytkownikEntity.cs" />
+    <Compile Include="Models\UzytkownikModel.cs" />
     <Compile Include="Models\ZarzadzanieHotelami.cs" />
-    <Compile Include="Presenters\AccountController.cs" />
+    <Compile Include="Presenters\Account\AccountController.cs" />
     <Compile Include="Presenters\HomeController.cs" />
+    <Compile Include="Presenters\Interfaces\IZarzadzajUzytkownikamiPresenter.cs" />
     <Compile Include="Presenters\IZarządzanieHotelem.cs" />
-    <Compile Include="Presenters\ManageController.cs" />
+    <Compile Include="Presenters\Account\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Account\AccountViewModels.cs" />
+    <Compile Include="Models\Account\IdentityModels.cs" />
+    <Compile Include="Models\Account\ManageViewModels.cs" />
+    <Compile Include="Presenters\ZarzadzajUzytkownikamiController.cs" />
     <Compile Include="Presenters\ZarzadzanieHotelemController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\ZarzadzajWidokamiKlientaView\IZarzadzajWidokamiKlientaView.cs" />
     <Compile Include="Views\WidokiManageraHotelu\FormularzEdycjiParametrówHoteluViewController.cs" />
     <Compile Include="Views\WidokiManageraHotelu\IFormularzEdycjiParametrówHotelu.cs" />
+    <Compile Include="Views\ZarzadzajWidokamiKlientaView\ZarzadzajWidokamiKlientaView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -255,12 +264,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\FormularzEdycjiParametrówHotelu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Views\ZarzadzanieHotelemPresenter\" />
     <Folder Include="Views\ZarzadzanieHotelem\" />
   </ItemGroup>
   <ItemGroup>
@@ -268,7 +274,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>

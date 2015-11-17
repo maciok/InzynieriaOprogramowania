@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using ProjektMVP.Models;
+﻿using ProjektMVP.Models;
 using System.Web.Mvc;
+using ProjektMVP.Models.Interfaces;
 using ProjektMVP.Presenters;
 
 namespace ProjektMVP.Views.WidokiManageraHotelu
@@ -25,7 +21,7 @@ namespace ProjektMVP.Views.WidokiManageraHotelu
 
         public ActionResult PokażFormularzEdycjiParametrówHotelu(IDaneHoteloweModel dane)
         {
-            return View("~/Views/WidokiManageraHotelu/FormularzEdycjiParametrówHotelu.cshtml", dane);
+            return View("Error");
         }
         
         [HttpPost]
