@@ -10,6 +10,7 @@ namespace ProjektMVP.Presenters
     {
         private static IFormularzEdycjiParametrówHotelu _formularzEdycjiParametrówHotelu;
         private static IZarzadzanieHotelami _zarzadzanieHotelami;
+        private static IZarządzanieHotelem _zarządzanieHotelem;
 
         public ZarzadzanieHotelemController()
         {
@@ -29,6 +30,36 @@ namespace ProjektMVP.Presenters
         public bool ZapiszDaneHotelu(IDaneHoteloweModel data)
         {
             return _zarzadzanieHotelami.ZapiszHotel(data) ;
+        }
+
+        public void DodajPokojDoHotelu(IPokojHotelowyModel pokoj)
+        {
+            _zarządzanieHotelem.DodajPokojDoHotelu(pokoj);
+        }
+
+        public void EdytujParametryPokoju(int id, IPokojHotelowyModel pokoj)
+        {
+            _zarządzanieHotelem.EdytujParametryPokoju(id, pokoj);
+        }
+
+        public IPokojHotelowyModel WyszukajPokoj(int id)
+        {
+            return _zarządzanieHotelem.WyszukajPokoj(id);
+        }
+
+        public ISalaKonferencyjnaModel WyszukaSalaKonferencyjna(int id)
+        {
+            return _zarządzanieHotelem.WyszukaSalaKonferencyjna(id);
+        }
+
+        public IDaneHoteloweModel WyszukajHotel(int id)
+        {
+            return _zarzadzanieHotelami.PobierzHotel(id);
+        }
+
+        public void DodajHotel(IDaneHoteloweModel daneHotelowe)
+        {
+            _zarzadzanieHotelami.DodajHotel(daneHotelowe);
         }
     }
 }

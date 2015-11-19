@@ -1,9 +1,14 @@
-﻿using ProjektMVP.Models.Interfaces;
+﻿using System.Collections.Generic;
+using System.Linq;
+using ProjektMVP.Models.Interfaces;
 
 namespace ProjektMVP.Models
 {
     public class DaneHoteloweModel : IDaneHoteloweModel
     {
-        public int HotelID { get; set; }
+        public int HotelId { get; set; }
+        public List<IPokojHotelowyModel> _pokojHotelowyModels;
+        public List<ISalaKonferencyjnaModel> _saleKonferencyjneModels;
+       
     }
 }

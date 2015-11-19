@@ -7,5 +7,11 @@ namespace ProjektMVP.Presenters
     {
         ActionResult EdytujParametryHotelu(int hotelId);
         bool ZapiszDaneHotelu(IDaneHoteloweModel data);
+        void DodajPokojDoHotelu(IPokojHotelowyModel pokoj);
+        void EdytujParametryPokoju(int id, IPokojHotelowyModel pokoj);
+        IPokojHotelowyModel WyszukajPokoj(int id);
+        ISalaKonferencyjnaModel WyszukaSalaKonferencyjna(int id);
+        IDaneHoteloweModel WyszukajHotel(int id);
+        void DodajHotel(IDaneHoteloweModel daneHotelowe);
     }
 }

@@ -180,10 +180,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="DTO\DaneHoteloweDB.cs" />
     <Compile Include="DTO\KartaKredytowaDTO.cs" />
     <Compile Include="DTO\UzytkownikDTO.cs" />
     <Compile Include="Models\DaneHoteloweModel.cs" />
     <Compile Include="Models\Interfaces\IDaneHoteloweModel.cs" />
+    <Compile Include="Models\Interfaces\IPokojHotelowyModel.cs" />
+    <Compile Include="Models\Interfaces\ISalaKonferencyjnaModel.cs" />
     <Compile Include="Models\Interfaces\IZarzadzanieHotelami.cs" />
     <Compile Include="Models\Interfaces\IUzytkownikModel.cs" />
     <Compile Include="Models\UzytkownikEntity.cs" />
@@ -202,12 +205,15 @@
     <Compile Include="Models\Account\ManageViewModels.cs" />
     <Compile Include="Presenters\ZarzadzajUzytkownikamiController.cs" />
     <Compile Include="Presenters\ZarzadzanieHotelemController.cs" />
+    <Compile Include="Presenters\ZarzadzenieHotelamiController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Views\ZarzadzajWidokamiKlientaView\IZarzadzajWidokamiKlientaView.cs" />
     <Compile Include="Views\WidokiManageraHotelu\FormularzEdycjiParametrówHoteluViewController.cs" />
     <Compile Include="Views\WidokiManageraHotelu\IFormularzEdycjiParametrówHotelu.cs" />
     <Compile Include="Views\ZarzadzajWidokamiKlientaView\ZarzadzajWidokamiKlientaView.cs" />
+    <Compile Include="Views\ZarzadzanieHotelem\ZarzadzenieHotelemView.cs" />
+    <Compile Include="Views\ZarzadzenieHotelami\ZarzadzenieHotelamiView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -267,7 +273,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ZarzadzanieHotelem\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

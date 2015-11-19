@@ -1,7 +1,11 @@
-﻿namespace ProjektMVP.Models.Interfaces
+﻿using System.Collections.Generic;
+
+namespace ProjektMVP.Models.Interfaces
 {
     public interface IDaneHoteloweModel
     {
-        int HotelID { get; set; }
+        int HotelId { get; set; }
+        List<IPokojHotelowyModel> PokojHotelowyModels { get; set; }
+        List<ISalaKonferencyjnaModel> SaleKonferencyjneModels { get; set; }
     }
 }
