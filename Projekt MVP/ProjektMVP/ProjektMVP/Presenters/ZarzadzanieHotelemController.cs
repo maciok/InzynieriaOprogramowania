@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using ProjektMVP.DTO;
 using ProjektMVP.Models;
 using ProjektMVP.Models.Interfaces;
 using ProjektMVP.Views.WidokiManageraHotelu;
@@ -8,6 +9,7 @@ namespace ProjektMVP.Presenters
     [RoutePrefix("ZarzadzanieHotelem")]
     public class ZarzadzanieHotelemController : Controller, IZarządzanieHotelem
     {
+        private DaneHoteloweDB db;
         private static IFormularzEdycjiParametrówHotelu _formularzEdycjiParametrówHotelu;
         private static IZarzadzanieHotelami _zarzadzanieHotelami;
         private static IZarządzanieHotelem _zarządzanieHotelem;
@@ -32,8 +34,11 @@ namespace ProjektMVP.Presenters
             return _zarzadzanieHotelami.ZapiszHotel(data) ;
         }
 
+        [Route("ZapiszPokojDoHotelu")]
+        [HttpPost]
         public void DodajPokojDoHotelu(IPokojHotelowyModel pokoj)
         {
+            db.PokojeHotelowe.Add(pokoj);
             _zarządzanieHotelem.DodajPokojDoHotelu(pokoj);
         }
 
