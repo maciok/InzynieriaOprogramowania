@@ -48,6 +48,11 @@ namespace ProjektMVP.Presenters
         {
             throw new NotImplementedException();
         }
+
+        public void Drukuj(PlatnoscEntity platnosc)
+        {
+            //drukowanie...
+        }
     }
 #pragma warning restore CS0162 // Unreachable code detected
 }

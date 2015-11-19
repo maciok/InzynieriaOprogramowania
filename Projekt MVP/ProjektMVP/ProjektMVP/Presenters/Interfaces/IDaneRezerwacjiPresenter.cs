@@ -13,5 +13,6 @@ namespace ProjektMVP.Presenters.Interfaces
         bool ZaksiegujPlatnosc(PlatnoscEntity platnosc);
         string ZapiszDoPliku(PlatnoscEntity platnosc, PlatnoscFormatZapisu format);
         string FormatTxt(PlatnoscEntity platnosc);
+        void Drukuj(PlatnoscEntity platnosc);
     }
 }

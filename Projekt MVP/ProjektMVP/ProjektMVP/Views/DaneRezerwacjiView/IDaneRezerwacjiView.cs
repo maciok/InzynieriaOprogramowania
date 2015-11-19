@@ -14,5 +14,6 @@ namespace ProjektMVP.Views.DaneRezerwacjiView
         ActionResult KliknijZapiszPlatnosc(PlatnoscEntity platnosc);
         ActionResult KliknijZaksiegujPlatnosc(PlatnoscEntity platnosc);
         ActionResult KliknijZapiszDoPliku(PlatnoscZapiszDoPlikuViewModel input);
+        ActionResult KliknijDrukuj(PlatnoscEntity platnosc); 
     }
 }

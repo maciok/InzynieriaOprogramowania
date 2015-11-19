@@ -1,5 +1,7 @@
 ﻿namespace ProjektMVP.Models
 {
+    using System;
+    using System.Collections.Generic;
     using Interfaces;
 
     public class UzytkownikModel : IUzytkownikModel
@@ -20,6 +22,21 @@
         }
 
         public bool WalidujDaneUzytkownika(UzytkownikEntity uzytkownik)
+        {
+            return true;
+        }
+
+        public bool EdytujKarteKredytowa(UzytkownikEntity uzytkownik)
+        {
+            return WalidujDaneKartyKredytowej(uzytkownik);
+        }
+
+        public List<UzytkownikEntity> PobierzListeUzytkownikow()
+        {
+            return new List<UzytkownikEntity>();
+        }
+
+        public bool WalidujDaneKartyKredytowej(UzytkownikEntity uzytkownik)
         {
             return true;
         }

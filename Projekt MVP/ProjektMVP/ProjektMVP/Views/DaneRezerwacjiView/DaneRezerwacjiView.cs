@@ -52,6 +52,11 @@ namespace ProjektMVP.Views.DaneRezerwacjiView
             // Wersja w przyszlosci
             // return _presenter.ZapiszDoPliku(input.Platnosc, input.Format);
         }
+
+        public ActionResult KliknijDrukuj(PlatnoscEntity platnosc)
+        {
+            throw new NotImplementedException();
+        }
     }
 #pragma warning restore CS0162 // Unreachable code detected
 
