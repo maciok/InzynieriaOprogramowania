@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2015-11-19 16:40:14">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2015-11-24 19:25:48">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -3003,7 +3003,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=1;"/>
+								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -4470,13 +4470,56 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="PobierzUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="UzytkownikDTO"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{0CD7424F-17F4-4e77-B771-048D80DE4651}"/>
+										<UML:TaggedValue tag="ea_localid" value="706"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid9"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="UzytkownikDTO"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-17F4-4e77-B771-048D80DE4651}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{3A01BF44-AB54-45b4-A783-E07DB83ECC5E}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 								<UML:Operation name="PokazFormularzDodawaniaUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="type" value="int"/>
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="3"/>
+										<UML:TaggedValue tag="position" value="4"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{45676D43-971A-4fd1-9E16-A41DA9A19946}"/>
@@ -4505,7 +4548,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="position" value="5"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{F4BCC8F3-8A83-4d23-9052-060BC16FB594}"/>
@@ -4534,7 +4577,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="5"/>
+										<UML:TaggedValue tag="position" value="6"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{4666ECA3-5E9C-4948-B428-0BAB32EBCB38}"/>
@@ -4563,7 +4606,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="6"/>
+										<UML:TaggedValue tag="position" value="7"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{316E0B77-1D39-4e2c-AFE4-038A16E8621F}"/>
@@ -4572,7 +4615,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid9"/>
+												<UML:Classifier xmi.idref="eaxmiid10"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -4586,9 +4629,252 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="WyslijProsbeOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="boolean"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="8"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{1DC91EB3-7EAA-4fc3-B784-9FCA50AE5BE9}"/>
+										<UML:TaggedValue tag="ea_localid" value="709"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-7EAA-4fc3-B784-9FCA50AE5BE9}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{A451202D-6360-4189-BA61-0D09F1D1E9FC}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="opis" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="1"/>
+												<UML:TaggedValue tag="type" value="string"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{41DAF48D-753A-4422-A725-EF339595C3B5}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="WyswietlFormularzProsbyOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="9"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{6E8CF18D-E25D-469a-895A-CBAFDBB82858}"/>
+										<UML:TaggedValue tag="ea_localid" value="708"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-E25D-469a-895A-CBAFDBB82858}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{FEE757B2-2995-44dc-A540-9741868B07C1}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="opis" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="1"/>
+												<UML:TaggedValue tag="type" value="string"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{36A11DC8-8E98-41e2-9F65-7C9744B2CAD2}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="WyswietlInformacjeOKoncie" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="10"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{2F3AE002-B444-4b6f-8A5B-26C0D5B0EA52}"/>
+										<UML:TaggedValue tag="ea_localid" value="704"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-B444-4b6f-8A5B-26C0D5B0EA52}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{0E69532A-64FD-4130-BF32-B9092839A9DD}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="ZawiesUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="boolean"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="11"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{422AB62B-61C2-44d7-B9FE-DBF085DEFBD5}"/>
+										<UML:TaggedValue tag="ea_localid" value="707"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-61C2-44d7-B9FE-DBF085DEFBD5}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid14"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="Int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{F2C6168E-22CE-404a-868F-58D7668494F9}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="ZawiesUzytkownikaButton" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="12"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{3989BA9D-D569-4471-B04A-D36D20F3BC53}"/>
+										<UML:TaggedValue tag="ea_localid" value="705"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-D569-4471-B04A-D36D20F3BC53}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{36933A73-AAF5-4249-A8DE-C15D5B61E4E4}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 							</UML:Classifier.feature>
 						</UML:Interface>
-						<UML:Dependency client="EAID_3019760B_3E33_4659_963A_42F81AA25E64" supplier="EAID_304C4959_22FC_42f9_9728_CFB754693D55" xmi.id="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" visibility="public">
+						<UML:Dependency client="EAID_3019760B_3E33_4659_963A_42F81AA25E64" supplier="EAID_304C4959_22FC_42f9_9728_CFB754693D55" xmi.id="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="style" value="3"/>
 								<UML:TaggedValue tag="ea_type" value="Realisation"/>
@@ -4599,7 +4885,7 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="4493"/>
+								<UML:TaggedValue tag="ea_localid" value="4551"/>
 								<UML:TaggedValue tag="ea_sourceName" value="ZarzadzajUzytkownikamiP"/>
 								<UML:TaggedValue tag="ea_targetName" value="IZarzadzajUzytkownikamiP"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
@@ -5162,7 +5448,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid10"/>
+												<UML:Classifier xmi.idref="eaxmiid15"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -5205,7 +5491,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid10"/>
+												<UML:Classifier xmi.idref="eaxmiid15"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -5248,7 +5534,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid10"/>
+												<UML:Classifier xmi.idref="eaxmiid15"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -5291,7 +5577,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid11"/>
+												<UML:Classifier xmi.idref="eaxmiid16"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -6672,7 +6958,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid12"/>
+												<UML:Classifier xmi.idref="eaxmiid17"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -7122,13 +7408,113 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="WyswietlFormularzProsbyOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="7"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{DA90149F-35BB-47d7-BFF4-83105E5F82EE}"/>
+										<UML:TaggedValue tag="ea_localid" value="712"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-35BB-47d7-BFF4-83105E5F82EE}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{4A9FF55F-649F-4fb3-8CBB-C1F7C8F9E299}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="opis" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="1"/>
+												<UML:TaggedValue tag="type" value="string"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{A4ED0945-78A7-4d01-A48F-A8C7B5CE801B}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
+								<UML:Operation name="WyswietlInformacjeOKoncie" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="8"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{B5B1A38A-3920-4d33-8C84-277E22CA23B5}"/>
+										<UML:TaggedValue tag="ea_localid" value="714"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-3920-4d33-8C84-277E22CA23B5}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{6EB44F29-062B-4e11-B82B-CC30023C92BF}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 								<UML:Operation name="WyswietlKomunikat" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="type" value="void"/>
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="7"/>
+										<UML:TaggedValue tag="position" value="9"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{C5BBD932-4353-418a-8519-57CEC3D13126}"/>
@@ -7157,7 +7543,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="8"/>
+										<UML:TaggedValue tag="position" value="10"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{A2880D5F-D4CF-4073-8285-AEB16CAC6F97}"/>
@@ -7180,7 +7566,7 @@
 										</UML:Parameter>
 										<UML:Parameter name="l" kind="in" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid9"/>
+												<UML:Classifier xmi.idref="eaxmiid10"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -7200,7 +7586,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="9"/>
+										<UML:TaggedValue tag="position" value="11"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{96460F13-3A66-4c55-8B92-618D3D6E320F}"/>
@@ -7223,7 +7609,7 @@
 										</UML:Parameter>
 										<UML:Parameter name="DaneU&#380;ytkownika" kind="in" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid13"/>
+												<UML:Classifier xmi.idref="eaxmiid18"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -7237,9 +7623,52 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="ZawiesUzytkownikaButton" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="ActionResult"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="12"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{EB63E797-C5B9-4833-8896-83ED51669B39}"/>
+										<UML:TaggedValue tag="ea_localid" value="713"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid13"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-C5B9-4833-8896-83ED51669B39}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{FAABC8A8-7D1A-4c97-8FCB-AC9709B684DD}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 							</UML:Classifier.feature>
 						</UML:Interface>
-						<UML:Dependency client="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" supplier="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" xmi.id="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" visibility="public">
+						<UML:Dependency client="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" supplier="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" xmi.id="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="style" value="3"/>
 								<UML:TaggedValue tag="ea_type" value="Realisation"/>
@@ -7250,7 +7679,7 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="4463"/>
+								<UML:TaggedValue tag="ea_localid" value="4552"/>
 								<UML:TaggedValue tag="ea_sourceName" value="ZarzadzajWidokamiKlientaV"/>
 								<UML:TaggedValue tag="ea_targetName" value="IZarzadzajWidokamiKlientaV"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
@@ -7273,7 +7702,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;"/>
+								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -7676,7 +8105,7 @@
 										</UML:Parameter>
 										<UML:Parameter name="Nazwa" kind="in" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid14"/>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -7763,7 +8192,7 @@
 										</UML:Parameter>
 										<UML:Parameter name="Nazwa" kind="in" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid14"/>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -7927,7 +8356,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=1;"/>
+								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -7965,7 +8394,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=1;"/>
+								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -7987,7 +8416,7 @@
 								<UML:TaggedValue tag="ea_targetType" value="Interface"/>
 								<UML:TaggedValue tag="ea_sourceID" value="9759"/>
 								<UML:TaggedValue tag="ea_targetID" value="9763"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=4;"/>
+								<UML:TaggedValue tag="privatedata5" value="EDGE=4;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Association.connection>
@@ -8393,7 +8822,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="EDGE=1;"/>
+								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -8563,7 +8992,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid10"/>
+												<UML:Classifier xmi.idref="eaxmiid15"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -8579,7 +9008,7 @@
 								</UML:Operation>
 								<UML:Operation name="EdytujUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="type" value="boolean"/>
+										<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
@@ -8592,11 +9021,11 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid15"/>
+												<UML:Classifier xmi.idref="eaxmiid19"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
-												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
 												<UML:TaggedValue tag="const" value="0"/>
 												<UML:TaggedValue tag="ea_guid" value="{RETURNID-5905-4a45-8C69-624FCB8D7EDE}"/>
 											</UML:ModelElement.taggedValue>
@@ -8621,7 +9050,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid9"/>
+												<UML:Classifier xmi.idref="eaxmiid10"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -8635,13 +9064,56 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="PobierzUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{1A9BACA4-D5CF-49b1-8E79-7A78206A5D93}"/>
+										<UML:TaggedValue tag="ea_localid" value="694"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid19"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-D5CF-49b1-8E79-7A78206A5D93}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{1B2E27D1-7F64-42dd-A1EF-AB05EB083198}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 								<UML:Operation name="ValidujDaneKartyKredytowej" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="type" value="boolean"/>
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="4"/>
+										<UML:TaggedValue tag="position" value="5"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{52DA2C48-526A-4004-B773-845D2869F805}"/>
@@ -8650,7 +9122,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid15"/>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -8670,7 +9142,7 @@
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="5"/>
+										<UML:TaggedValue tag="position" value="6"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{A6A40848-E2DE-43f4-8959-FC8653362BB8}"/>
@@ -8679,7 +9151,7 @@
 									<UML:BehavioralFeature.parameter>
 										<UML:Parameter kind="return" visibility="public">
 											<UML:Parameter.type>
-												<UML:Classifier xmi.idref="eaxmiid15"/>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
 											</UML:Parameter.type>
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="pos" value="0"/>
@@ -8693,13 +9165,70 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="WyslijProsbeOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="bool"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="7"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{51D76380-4AED-4508-A948-B85392BDF0F2}"/>
+										<UML:TaggedValue tag="ea_localid" value="697"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid15"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="bool"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-4AED-4508-A948-B85392BDF0F2}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{F499350F-41C0-4d61-A25E-F79E22549195}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="opis" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid12"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="1"/>
+												<UML:TaggedValue tag="type" value="string"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{F70112AA-C057-4e0c-959C-4B478726A05D}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 								<UML:Operation name="ZapiszNowegoUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="type" value="int"/>
 										<UML:TaggedValue tag="const" value="false"/>
 										<UML:TaggedValue tag="synchronised" value="0"/>
 										<UML:TaggedValue tag="concurrency" value="Sequential"/>
-										<UML:TaggedValue tag="position" value="6"/>
+										<UML:TaggedValue tag="position" value="10"/>
 										<UML:TaggedValue tag="returnarray" value="0"/>
 										<UML:TaggedValue tag="pure" value="0"/>
 										<UML:TaggedValue tag="ea_guid" value="{39694572-790A-47f2-910C-068359786089}"/>
@@ -8722,9 +9251,52 @@
 										</UML:Parameter>
 									</UML:BehavioralFeature.parameter>
 								</UML:Operation>
+								<UML:Operation name="ZawiesUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="type" value="boolean"/>
+										<UML:TaggedValue tag="const" value="false"/>
+										<UML:TaggedValue tag="synchronised" value="0"/>
+										<UML:TaggedValue tag="concurrency" value="Sequential"/>
+										<UML:TaggedValue tag="position" value="11"/>
+										<UML:TaggedValue tag="returnarray" value="0"/>
+										<UML:TaggedValue tag="pure" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{CC053395-9D26-4d72-8D99-17CAAB04B8B9}"/>
+										<UML:TaggedValue tag="ea_localid" value="695"/>
+									</UML:ModelElement.taggedValue>
+									<UML:BehavioralFeature.parameter>
+										<UML:Parameter kind="return" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid11"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{RETURNID-9D26-4d72-8D99-17CAAB04B8B9}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+										<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+											<UML:Parameter.type>
+												<UML:Classifier xmi.idref="eaxmiid2"/>
+											</UML:Parameter.type>
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="pos" value="0"/>
+												<UML:TaggedValue tag="type" value="int"/>
+												<UML:TaggedValue tag="const" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{BC1F2C65-A33D-4ce9-9067-F5ED3BB9C816}"/>
+											</UML:ModelElement.taggedValue>
+											<UML:Parameter.defaultValue>
+												<UML:Expression/>
+											</UML:Parameter.defaultValue>
+										</UML:Parameter>
+									</UML:BehavioralFeature.parameter>
+								</UML:Operation>
 							</UML:Classifier.feature>
 						</UML:Interface>
-						<UML:Dependency client="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" supplier="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" xmi.id="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" visibility="public">
+						<UML:Dependency client="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" supplier="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" xmi.id="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="style" value="3"/>
 								<UML:TaggedValue tag="ea_type" value="Realisation"/>
@@ -8735,7 +9307,7 @@
 								<UML:TaggedValue tag="seqno" value="0"/>
 								<UML:TaggedValue tag="headStyle" value="0"/>
 								<UML:TaggedValue tag="lineStyle" value="0"/>
-								<UML:TaggedValue tag="ea_localid" value="4448"/>
+								<UML:TaggedValue tag="ea_localid" value="4550"/>
 								<UML:TaggedValue tag="ea_sourceName" value="UzytkownikModel"/>
 								<UML:TaggedValue tag="ea_targetName" value="IUzytkownikModel"/>
 								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
@@ -8758,7 +9330,7 @@
 								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
-								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;"/>
+								<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=1;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
@@ -8866,7 +9438,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid16"/>
+														<UML:Classifier xmi.idref="eaxmiid20"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -8904,7 +9476,7 @@
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
 										<UML:TaggedValue tag="date_created" value="2015-11-03 23:18:48"/>
-										<UML:TaggedValue tag="date_modified" value="2015-11-19 15:13:33"/>
+										<UML:TaggedValue tag="date_modified" value="2015-11-24 18:59:47"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package_name" value="Administracja systemem"/>
@@ -8927,8 +9499,18 @@
 												<UML:TaggedValue tag="position" value="0"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{779E377A-B470-41b4-A27C-D16F905A31DC}"/>
-												<UML:TaggedValue tag="ea_localid" value="598"/>
+												<UML:TaggedValue tag="ea_guid" value="{7CFCD7C4-47C0-46c6-ADB0-6E7EAD54B04E}"/>
+												<UML:TaggedValue tag="ea_localid" value="763"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.DodajUzytkownika" xmi.id="EAID_4D2DEA33_0BF0_4151_B2DC_7D78E654F000">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{2FAA6A94-9552-4a7a-8A72-3627CB7CED26}" xmi.id="EAID_9687ABFB_29EC_4125_B807_125DA9EBA812">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -8939,7 +9521,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="int"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-B470-41b4-A27C-D16F905A31DC}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-47C0-46c6-ADB0-6E7EAD54B04E}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -8956,8 +9538,18 @@
 												<UML:TaggedValue tag="position" value="1"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{24167AE7-836D-4968-910C-046CE07EFAED}"/>
-												<UML:TaggedValue tag="ea_localid" value="599"/>
+												<UML:TaggedValue tag="ea_guid" value="{657E5EBF-28D6-463e-B022-3233D702E196}"/>
+												<UML:TaggedValue tag="ea_localid" value="728"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.EdytujKarteKredytowa" xmi.id="EAID_37046CE6_C263_40fa_B6E3_D954EDB6158F">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{AEB9C3C7-8620-44d4-B58F-EEA89C20A25C}" xmi.id="EAID_3D10930C_3DD6_4406_984F_72964567D771">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -8968,7 +9560,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-836D-4968-910C-046CE07EFAED}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-28D6-463e-B022-3233D702E196}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -8985,14 +9577,14 @@
 												<UML:TaggedValue tag="position" value="2"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{3B4D2B29-9047-4eab-9A45-7649B6E52BC8}"/>
-												<UML:TaggedValue tag="ea_localid" value="600"/>
-												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.EdytujUzytkownika" xmi.id="EAID_AC7031B6_5177_4e0d_B1B5_428E6571DE7F">
+												<UML:TaggedValue tag="ea_guid" value="{6877E3F7-0F4A-4625-934E-887735B88FAD}"/>
+												<UML:TaggedValue tag="ea_localid" value="765"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.EdytujUzytkownika" xmi.id="EAID_5978F629_1CF2_4e1c_90D3_5C5094420DC7">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="ImplementsGuid" value="{61BB56DA-DEEE-4027-BC6F-5B5E64CAC313}" xmi.id="EAID_FCE4EE22_6A48_4ed2_8B5A_4300E2731685">
+												<UML:TaggedValue tag="ImplementsGuid" value="{61BB56DA-DEEE-4027-BC6F-5B5E64CAC313}" xmi.id="EAID_DC512A06_8A6A_49c2_9A89_6A59816EDE51">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
@@ -9007,7 +9599,60 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="int"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9047-4eab-9A45-7649B6E52BC8}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-0F4A-4625-934E-887735B88FAD}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="PobierzUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="UzytkownikDTO"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="3"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{354BDC7A-FDCE-401a-AC8E-DDF8670F200B}"/>
+												<UML:TaggedValue tag="ea_localid" value="766"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{0CD7424F-17F4-4e77-B771-048D80DE4651}" xmi.id="EAID_5F72E3F2_1C1F_4fdd_9234_49BD49A82F85">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.PobierzUzytkownika" xmi.id="EAID_D0899ED3_F591_4acc_9091_8377BA5E8B7B">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid9"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="UzytkownikDTO"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-FDCE-401a-AC8E-DDF8670F200B}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{73574088-2D18-4802-A89C-F63B0495D84E}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9021,11 +9666,21 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="3"/>
+												<UML:TaggedValue tag="position" value="4"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{56BF1AB1-C452-4a04-9C9B-23F234A3841E}"/>
-												<UML:TaggedValue tag="ea_localid" value="601"/>
+												<UML:TaggedValue tag="ea_guid" value="{AC1DD3ED-FAB0-4b5e-8F75-FD6B51DA41B3}"/>
+												<UML:TaggedValue tag="ea_localid" value="731"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.PokazFormularzDodawaniaUzytkownika" xmi.id="EAID_56DE2B03_B4CD_4976_8133_F3C6CDE38FB3">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{45676D43-971A-4fd1-9E16-A41DA9A19946}" xmi.id="EAID_C853DEF9_CB84_4a52_BD7B_CF217DCACB51">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9036,7 +9691,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="int"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-C452-4a04-9C9B-23F234A3841E}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-FAB0-4b5e-8F75-FD6B51DA41B3}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9050,11 +9705,21 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="4"/>
+												<UML:TaggedValue tag="position" value="5"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{449DCC9B-B0F2-4d79-B647-E7A6A684A7F5}"/>
-												<UML:TaggedValue tag="ea_localid" value="602"/>
+												<UML:TaggedValue tag="ea_guid" value="{9AF4BF73-E8BC-4448-8775-D9DF2B2C79B2}"/>
+												<UML:TaggedValue tag="ea_localid" value="732"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{F4BCC8F3-8A83-4d23-9052-060BC16FB594}" xmi.id="EAID_86CBAF25_FADD_4336_876A_F0C80069BD23">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.PokazFormularzEdycjiKartyKredytowej" xmi.id="EAID_8FEEF313_6037_4c96_850A_67FD66232C64">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9065,7 +9730,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-B0F2-4d79-B647-E7A6A684A7F5}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-E8BC-4448-8775-D9DF2B2C79B2}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9079,11 +9744,21 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="5"/>
+												<UML:TaggedValue tag="position" value="6"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{86B76483-3404-4420-8A0C-7535683FE05D}"/>
-												<UML:TaggedValue tag="ea_localid" value="603"/>
+												<UML:TaggedValue tag="ea_guid" value="{A3697136-7B14-4a58-8BBD-6A9A6FBC6985}"/>
+												<UML:TaggedValue tag="ea_localid" value="769"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.PokazFormularzEdycjiUzytkownika" xmi.id="EAID_956137D2_B43D_4b82_BEF0_CD94747CF0E6">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{4666ECA3-5E9C-4948-B428-0BAB32EBCB38}" xmi.id="EAID_C19E93CD_5007_4cdb_9959_753A61797AB8">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9094,7 +9769,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="int"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-3404-4420-8A0C-7535683FE05D}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-7B14-4a58-8BBD-6A9A6FBC6985}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9108,22 +9783,325 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="6"/>
+												<UML:TaggedValue tag="position" value="7"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{D729518C-D1CD-4f31-948F-0B08CB363BAE}"/>
-												<UML:TaggedValue tag="ea_localid" value="604"/>
+												<UML:TaggedValue tag="ea_guid" value="{216B79DC-4FCB-4da3-8AA9-9CA1EF81F905}"/>
+												<UML:TaggedValue tag="ea_localid" value="770"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.WezListeUzytkownikow" xmi.id="EAID_91A397E1_129F_4607_8373_12AF4F8C673F">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{316E0B77-1D39-4e2c-AFE4-038A16E8621F}" xmi.id="EAID_C9153FD6_336A_4157_97AE_403C07C11584">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid9"/>
+														<UML:Classifier xmi.idref="eaxmiid10"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="List&lt;DaneUzytkownika&gt;"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-D1CD-4f31-948F-0B08CB363BAE}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-4FCB-4da3-8AA9-9CA1EF81F905}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyslijProsbeOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="8"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{E688A8F7-9229-4833-B415-BA222122437D}"/>
+												<UML:TaggedValue tag="ea_localid" value="771"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{1DC91EB3-7EAA-4fc3-B784-9FCA50AE5BE9}" xmi.id="EAID_5F808174_123A_43d3_9A1A_66EF8CDCCD78">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.WyslijProsbeOUsuniecieKonta" xmi.id="EAID_7819DC6E_6A3A_4e37_91CF_6D8A6726524D">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9229-4833-B415-BA222122437D}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{9C29893E-396D-4539-9C8B-D97F21C80E6B}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="opis" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="1"/>
+														<UML:TaggedValue tag="type" value="string"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{FBBD6CFC-2D2D-4d22-9C28-DA2D3D308D2A}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyswietlFormularzProsbyOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="9"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{D59B07AB-6F34-4ee9-9BF9-30CFE5F0FE93}"/>
+												<UML:TaggedValue tag="ea_localid" value="772"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{6E8CF18D-E25D-469a-895A-CBAFDBB82858}" xmi.id="EAID_28B1D795_E86B_4350_B3C3_AC2F0D5BF769">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.WyswietlFormularzProsbyOUsuniecieKonta" xmi.id="EAID_BB442338_06BE_4520_AD13_01CFBD6F1CAD">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-6F34-4ee9-9BF9-30CFE5F0FE93}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{0114F0A0-B5AD-4227-BBB2-E18E22DB265C}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="opis" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="1"/>
+														<UML:TaggedValue tag="type" value="string"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{2D8BAE4A-D450-4833-A32A-7DC21D0D48FB}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyswietlInformacjeOKoncie" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="10"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{26237C83-1274-4407-9482-F36F551073D0}"/>
+												<UML:TaggedValue tag="ea_localid" value="773"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{2F3AE002-B444-4b6f-8A5B-26C0D5B0EA52}" xmi.id="EAID_0D5DD16B_1939_4e14_8AC9_2594FC008413">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.WyswietlInformacjeOKoncie" xmi.id="EAID_2E6CA247_F5A3_481b_B7B1_F73C8054C7D6">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-1274-4407-9482-F36F551073D0}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{BC65CD66-7BF5-43d2-80A6-D547D8A1A7EF}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="ZawiesUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="11"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{3DE3ABAD-F9B7-42dc-8105-F0CA5C098ACD}"/>
+												<UML:TaggedValue tag="ea_localid" value="774"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.ZawiesUzytkownika" xmi.id="EAID_59F9E609_F7A6_4bea_8601_CE8C002006B0">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{422AB62B-61C2-44d7-B9FE-DBF085DEFBD5}" xmi.id="EAID_9262D0D9_9DEC_45a9_B1F6_B5D9473B21D7">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-F9B7-42dc-8105-F0CA5C098ACD}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid14"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="Int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{DAD7DED9-BEE4-44cb-AD5D-C6CD5B87E9DE}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="ZawiesUzytkownikaButton" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="12"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{BD519D44-BEF7-44c8-80AA-8A0AFEC1D376}"/>
+												<UML:TaggedValue tag="ea_localid" value="775"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{3989BA9D-D569-4471-B04A-D36D20F3BC53}" xmi.id="EAID_A138923F_3167_4407_B067_A79319D4AFBB">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajUzytkownikamiP.ZawiesUzytkownikaButton" xmi.id="EAID_EE3B1136_5E6F_430e_B825_2C6BA867A0F6">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-BEF7-44c8-80AA-8A0AFEC1D376}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{37FA68F5-77C5-4763-AC64-9E22C41943B3}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9170,7 +10148,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid15"/>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -9299,8 +10277,18 @@
 												<UML:TaggedValue tag="position" value="0"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{DAE3E07E-CA67-4154-901B-5A3E8D17C2A9}"/>
-												<UML:TaggedValue tag="ea_localid" value="608"/>
+												<UML:TaggedValue tag="ea_guid" value="{2641DBE9-53BB-4e18-9D2F-BFD56D3E9C76}"/>
+												<UML:TaggedValue tag="ea_localid" value="753"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.DodajKarteKredytowa" xmi.id="EAID_787EB0F1_584A_478a_A94F_77953E2AF83D">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{FD066688-A14A-44aa-A434-B358F48B857D}" xmi.id="EAID_A41A27EB_1446_44da_BAAF_6AD4140F7FD3">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9311,7 +10299,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-CA67-4154-901B-5A3E8D17C2A9}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-53BB-4e18-9D2F-BFD56D3E9C76}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9328,43 +10316,14 @@
 												<UML:TaggedValue tag="position" value="1"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{A97FA80B-236B-4c6b-915B-CDAD9C34CF0C}"/>
-												<UML:TaggedValue tag="ea_localid" value="609"/>
-											</UML:ModelElement.taggedValue>
-											<UML:BehavioralFeature.parameter>
-												<UML:Parameter kind="return" visibility="public">
-													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid10"/>
-													</UML:Parameter.type>
-													<UML:ModelElement.taggedValue>
-														<UML:TaggedValue tag="pos" value="0"/>
-														<UML:TaggedValue tag="type" value="bool"/>
-														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-236B-4c6b-915B-CDAD9C34CF0C}"/>
-													</UML:ModelElement.taggedValue>
-													<UML:Parameter.defaultValue>
-														<UML:Expression/>
-													</UML:Parameter.defaultValue>
-												</UML:Parameter>
-											</UML:BehavioralFeature.parameter>
-										</UML:Operation>
-										<UML:Operation name="EdytujUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="type" value="boolean"/>
-												<UML:TaggedValue tag="const" value="false"/>
-												<UML:TaggedValue tag="synchronised" value="0"/>
-												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="2"/>
-												<UML:TaggedValue tag="returnarray" value="0"/>
-												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{0CD44B5B-9160-491f-9DD8-49C1A4A35CC8}"/>
-												<UML:TaggedValue tag="ea_localid" value="610"/>
-												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.EdytujUzytkownika" xmi.id="EAID_A38E95CD_8E8E_4251_8B2F_A68D37A3A6C2">
+												<UML:TaggedValue tag="ea_guid" value="{B2D11593-ED2C-4997-A502-F459C6F72DD8}"/>
+												<UML:TaggedValue tag="ea_localid" value="718"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.EdytujKarteKredytowa" xmi.id="EAID_2A61C447_A187_4df7_832F_D96EA02C5519">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="ImplementsGuid" value="{0274B3C4-5905-4a45-8C69-624FCB8D7EDE}" xmi.id="EAID_C4DFBF93_8F10_45c7_820F_BDE21E9F6A9C">
+												<UML:TaggedValue tag="ImplementsGuid" value="{3583449F-B62A-4416-8C0B-CFED9D6E5BED}" xmi.id="EAID_570947E2_089B_41ed_AC27_7D352E2084A9">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
@@ -9377,9 +10336,48 @@
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
-														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="type" value="bool"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9160-491f-9DD8-49C1A4A35CC8}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-ED2C-4997-A502-F459C6F72DD8}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="EdytujUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="2"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{37E28CBF-1585-499c-92A6-4020BB67EBED}"/>
+												<UML:TaggedValue tag="ea_localid" value="755"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.EdytujUzytkownika" xmi.id="EAID_00AB7BD3_04A3_4657_BCC4_43468E9607AA">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{0274B3C4-5905-4a45-8C69-624FCB8D7EDE}" xmi.id="EAID_F673DB12_957B_4708_9188_BC3050BEC5F9">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid19"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-1585-499c-92A6-4020BB67EBED}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9396,19 +10394,82 @@
 												<UML:TaggedValue tag="position" value="3"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{8F8515C6-073F-407d-A32E-69FF722C3179}"/>
-												<UML:TaggedValue tag="ea_localid" value="611"/>
+												<UML:TaggedValue tag="ea_guid" value="{8BFAE622-3AF5-4b9d-BC17-76675CAD1605}"/>
+												<UML:TaggedValue tag="ea_localid" value="756"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.PobierzListeUzytkownikow" xmi.id="EAID_5F2BAE6F_F90A_4d63_A0F6_6140A7C0D351">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{0E8415A1-7A49-475b-957B-9E576169A381}" xmi.id="EAID_A6D6D24A_E750_4129_9862_3EE3098712E0">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid9"/>
+														<UML:Classifier xmi.idref="eaxmiid10"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="List&lt;DaneUzytkownika&gt;"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-073F-407d-A32E-69FF722C3179}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-3AF5-4b9d-BC17-76675CAD1605}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="PobierzUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="4"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{51C5E8D4-E31E-4920-84B3-92E083BA5A3A}"/>
+												<UML:TaggedValue tag="ea_localid" value="757"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.PobierzUzytkownika" xmi.id="EAID_791A40E7_F5CA_4173_91AE_7A06E1037CA8">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{1A9BACA4-D5CF-49b1-8E79-7A78206A5D93}" xmi.id="EAID_F7B1106E_82CC_4b4c_A41D_ED395A5B7DC5">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid19"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="UzytkownikEntity"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-E31E-4920-84B3-92E083BA5A3A}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{3FB65DCD-B675-4a8a-8FE9-33E8C0E0241F}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9422,22 +10483,32 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="4"/>
+												<UML:TaggedValue tag="position" value="5"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{B1D166C7-B428-45d3-91B3-FCDD28A750B0}"/>
-												<UML:TaggedValue tag="ea_localid" value="612"/>
+												<UML:TaggedValue tag="ea_guid" value="{5F18657C-D989-4eb7-B14A-75604E3BA427}"/>
+												<UML:TaggedValue tag="ea_localid" value="758"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{52DA2C48-526A-4004-B773-845D2869F805}" xmi.id="EAID_1E83880F_CF4E_4e7c_A5AA_EA75AAAAD146">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.ValidujDaneKartyKredytowej" xmi.id="EAID_1F818A25_6A8E_4847_BAA7_16EB5D035643">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid15"/>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="boolean"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-B428-45d3-91B3-FCDD28A750B0}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-D989-4eb7-B14A-75604E3BA427}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9451,11 +10522,60 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="5"/>
+												<UML:TaggedValue tag="position" value="6"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{6810A00E-23AA-4562-8F58-5705B5169447}"/>
-												<UML:TaggedValue tag="ea_localid" value="613"/>
+												<UML:TaggedValue tag="ea_guid" value="{44DC1CFE-3292-4312-BFC5-B1BD67BA0F6A}"/>
+												<UML:TaggedValue tag="ea_localid" value="759"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.WalidujDaneUzytkownika" xmi.id="EAID_02CA9820_80AE_43c8_9329_DD54BA7D5490">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{A6A40848-E2DE-43f4-8959-FC8653362BB8}" xmi.id="EAID_4AAFEFC1_2765_45d0_AB33_B6941D392332">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-3292-4312-BFC5-B1BD67BA0F6A}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyslijProsbeOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="bool"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="7"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{BC1F51C4-02A7-4455-AB6D-2CA89E5F3DC7}"/>
+												<UML:TaggedValue tag="ea_localid" value="760"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{51D76380-4AED-4508-A948-B85392BDF0F2}" xmi.id="EAID_AB075747_4EE9_4fca_944E_134F49F2F5DF">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.WyslijProsbeOUsuniecieKonta" xmi.id="EAID_D56FA0BD_5AFD_4b9f_A62F_B236A80CF8DC">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9464,9 +10584,37 @@
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
-														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="type" value="bool"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-23AA-4562-8F58-5705B5169447}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-02A7-4455-AB6D-2CA89E5F3DC7}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{905EDD78-E697-4e1c-8C95-8DD30ACD1CC2}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="opis" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="1"/>
+														<UML:TaggedValue tag="type" value="string"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{1F8AE470-95CB-46f7-8628-6C5DCA0D2DC0}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9480,11 +10628,21 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="6"/>
+												<UML:TaggedValue tag="position" value="10"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{32AC6B7E-8DA2-4b79-9450-D40284182233}"/>
-												<UML:TaggedValue tag="ea_localid" value="614"/>
+												<UML:TaggedValue tag="ea_guid" value="{A7797A7E-AB4E-45ca-A3BB-32C61FF2F5AA}"/>
+												<UML:TaggedValue tag="ea_localid" value="761"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{39694572-790A-47f2-910C-068359786089}" xmi.id="EAID_1FA48E83_2F8E_49e1_9590_12C3661E744F">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.ZapiszNowegoUzytkownika" xmi.id="EAID_EB3500C6_ED63_4d7e_B7F5_907234424ED0">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9495,7 +10653,60 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="int"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-8DA2-4b79-9450-D40284182233}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-AB4E-45ca-A3BB-32C61FF2F5AA}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="ZawiesUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="boolean"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="11"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{5D73110A-A539-4d41-A860-FE01699CA600}"/>
+												<UML:TaggedValue tag="ea_localid" value="762"/>
+												<UML:TaggedValue tag="Implements" value="IUzytkownikModel.ZawiesUzytkownika" xmi.id="EAID_0E11480E_39AA_4c91_857A_54726942A029">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{CC053395-9D26-4d72-8D99-17CAAB04B8B9}" xmi.id="EAID_41308309_59C1_472e_9299_9A73C07C6F0D">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid11"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="boolean"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-A539-4d41-A860-FE01699CA600}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{1619D186-3FC2-4522-9BB3-D3E99AA0124E}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9524,7 +10735,7 @@
 										<UML:TaggedValue tag="tpos" value="0"/>
 										<UML:TaggedValue tag="ea_localid" value="9839"/>
 										<UML:TaggedValue tag="ea_eleType" value="element"/>
-										<UML:TaggedValue tag="$ea_oprparamsclassified" value="{C41A2C72-7EF2-47a7-87B1-B98116673A28},{C8056766-7D89-421f-ABA6-EE0AECCB44DB}"/>
+										<UML:TaggedValue tag="$ea_oprparamsclassified" value="{7A0AD2F9-A7E7-4883-BCF3-9C55B42BBAF7},{C8056766-7D89-421f-ABA6-EE0AECCB44DB}"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Class>
@@ -9536,7 +10747,7 @@
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
 										<UML:TaggedValue tag="date_created" value="2015-11-04 22:05:27"/>
-										<UML:TaggedValue tag="date_modified" value="2015-11-04 22:05:55"/>
+										<UML:TaggedValue tag="date_modified" value="2015-11-24 18:59:47"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package_name" value="Administracja systemem"/>
@@ -9559,14 +10770,14 @@
 												<UML:TaggedValue tag="position" value="0"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{FBFBFD67-60BC-4093-AE09-81652B3BBA27}"/>
-												<UML:TaggedValue tag="ea_localid" value="615"/>
-												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.KliknijPrzyciskDodajUzytkownika" xmi.id="EAID_C09EA9CE_6CE8_47d7_83AE_0AA8E541A775">
+												<UML:TaggedValue tag="ea_guid" value="{9F9AE1C9-B1CD-4718-8B08-DEEC7CB85F73}"/>
+												<UML:TaggedValue tag="ea_localid" value="776"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.KliknijPrzyciskDodajUzytkownika" xmi.id="EAID_560986B9_6063_4df2_898E_0E11CE309822">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="ImplementsGuid" value="{FF8E5C71-7AD1-4228-B411-50147DDCC93A}" xmi.id="EAID_C911FCAC_F19F_4dc4_8A1E_ADAC29F1908E">
+												<UML:TaggedValue tag="ImplementsGuid" value="{FF8E5C71-7AD1-4228-B411-50147DDCC93A}" xmi.id="EAID_B57CFC86_FC60_4096_97FC_E7C3B56BE4AD">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
@@ -9581,7 +10792,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-60BC-4093-AE09-81652B3BBA27}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-B1CD-4718-8B08-DEEC7CB85F73}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9598,8 +10809,18 @@
 												<UML:TaggedValue tag="position" value="1"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{6964C5A4-86E6-4696-AED3-FC0E16116D48}"/>
-												<UML:TaggedValue tag="ea_localid" value="616"/>
+												<UML:TaggedValue tag="ea_guid" value="{372D3E98-E9A0-446c-A923-413A2725DD9D}"/>
+												<UML:TaggedValue tag="ea_localid" value="741"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.KliknijPrzyciskDodaniaKarty" xmi.id="EAID_461BA56D_86CE_405b_AFEB_C5BC7A3E5996">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{2A2B2DE0-DE39-4347-B81D-0189EAA416CB}" xmi.id="EAID_5DA58682_86FE_42c1_8534_9D037DB11ECA">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9610,7 +10831,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-86E6-4696-AED3-FC0E16116D48}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-E9A0-446c-A923-413A2725DD9D}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9627,8 +10848,18 @@
 												<UML:TaggedValue tag="position" value="2"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{7046DCBB-5830-4345-AFBF-CDE04EA66F18}"/>
-												<UML:TaggedValue tag="ea_localid" value="617"/>
+												<UML:TaggedValue tag="ea_guid" value="{5ED1B230-9EC5-4841-9424-E7BA8909E018}"/>
+												<UML:TaggedValue tag="ea_localid" value="778"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.KliknijPrzyciskEdycjiKarty" xmi.id="EAID_07B6B603_D947_464a_A665_B1F6905CD80A">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{07F1F597-024F-4bb0-B2FF-2011A52E67D5}" xmi.id="EAID_9BDB94E2_36C4_4dfe_A420_52F2E0C81058">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9639,7 +10870,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-5830-4345-AFBF-CDE04EA66F18}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9EC5-4841-9424-E7BA8909E018}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9647,7 +10878,7 @@
 												</UML:Parameter>
 											</UML:BehavioralFeature.parameter>
 										</UML:Operation>
-										<UML:Operation name="KliknijPrzyciskEdytujUzytkownika" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+										<UML:Operation name="KliknijWyswietlListeUzytkownikow" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="type" value="void"/>
 												<UML:TaggedValue tag="const" value="false"/>
@@ -9656,8 +10887,18 @@
 												<UML:TaggedValue tag="position" value="3"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{ABB494A9-30DF-49f4-8D6B-99DDE095BB90}"/>
-												<UML:TaggedValue tag="ea_localid" value="618"/>
+												<UML:TaggedValue tag="ea_guid" value="{B07F0A33-0212-41d1-B0C0-22F85C20DF11}"/>
+												<UML:TaggedValue tag="ea_localid" value="779"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.KliknijWyswietlListeUzytkownikow" xmi.id="EAID_92DC139B_8130_483a_9FB1_8E42F4FE8FAA">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{A54E7EB5-FAF1-4984-80E3-5AE7922D8112}" xmi.id="EAID_C136BD33_B349_4e4b_B83A_3EE5FDCFD16E">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9668,7 +10909,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-30DF-49f4-8D6B-99DDE095BB90}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-0212-41d1-B0C0-22F85C20DF11}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9676,7 +10917,7 @@
 												</UML:Parameter>
 											</UML:BehavioralFeature.parameter>
 										</UML:Operation>
-										<UML:Operation name="WyswietlFormularzDodawaniaKarty" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+										<UML:Operation name="WyswietlFormularzDodawaniaKartyKredytowej" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="type" value="void"/>
 												<UML:TaggedValue tag="const" value="false"/>
@@ -9685,8 +10926,18 @@
 												<UML:TaggedValue tag="position" value="4"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{ED1D1958-3E70-4919-9F76-8E8EB39E5326}"/>
-												<UML:TaggedValue tag="ea_localid" value="619"/>
+												<UML:TaggedValue tag="ea_guid" value="{813321FA-C091-4188-B0E4-FD3378F7B4DE}"/>
+												<UML:TaggedValue tag="ea_localid" value="744"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzDodawaniaKartyKredytowej" xmi.id="EAID_4893D307_049B_406b_8687_909EFAC8E7C5">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{E654E810-F689-4930-BEA8-996D5207DE4A}" xmi.id="EAID_7ACE0E89_15D9_4266_9F29_31792E839E41">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9697,7 +10948,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-3E70-4919-9F76-8E8EB39E5326}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-C091-4188-B0E4-FD3378F7B4DE}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9714,14 +10965,14 @@
 												<UML:TaggedValue tag="position" value="5"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{E54559DC-9B35-4ca4-A419-339AAB970820}"/>
-												<UML:TaggedValue tag="ea_localid" value="620"/>
-												<UML:TaggedValue tag="ImplementsGuid" value="{2D49ECD8-66C1-4a75-8AF3-C788CF32E952}" xmi.id="EAID_7DC49634_4187_4191_B683_5D11E57F2ADE">
+												<UML:TaggedValue tag="ea_guid" value="{7F4D45B7-68B0-40eb-93FA-4E76AF4F08DF}"/>
+												<UML:TaggedValue tag="ea_localid" value="745"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{2D49ECD8-66C1-4a75-8AF3-C788CF32E952}" xmi.id="EAID_7DCB78BD_EF79_4e06_8A0D_F94BE5A48ACC">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzDodawaniaUzytkownika" xmi.id="EAID_DBA30FEE_DFE6_4a6e_A708_5E0BC9F5625B">
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzDodawaniaUzytkownika" xmi.id="EAID_F0F0E6F5_14D0_43db_A3E7_A6EA8289C59F">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
@@ -9736,7 +10987,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9B35-4ca4-A419-339AAB970820}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-68B0-40eb-93FA-4E76AF4F08DF}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9753,14 +11004,14 @@
 												<UML:TaggedValue tag="position" value="6"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{6ADAA232-8924-4ae7-BBF0-80247644D2A5}"/>
-												<UML:TaggedValue tag="ea_localid" value="621"/>
-												<UML:TaggedValue tag="ImplementsGuid" value="{5A7AB446-947A-4454-BC77-21F6468683D0}" xmi.id="EAID_4D31D2A6_E77C_4c9b_8916_EE57FF99109A">
+												<UML:TaggedValue tag="ea_guid" value="{E2E922C5-BB51-4576-BCD8-8784B42243A8}"/>
+												<UML:TaggedValue tag="ea_localid" value="782"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{5A7AB446-947A-4454-BC77-21F6468683D0}" xmi.id="EAID_2A9D2EE4_FCDC_4942_AFCE_6F4646BB455E">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzEdycjiUzytkownika" xmi.id="EAID_4D45D7D7_6085_4718_BCD2_4866D17B6286">
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzEdycjiUzytkownika" xmi.id="EAID_A3F0B0B7_6DA8_49af_810C_D8818F95B93E">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
@@ -9775,7 +11026,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-8924-4ae7-BBF0-80247644D2A5}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-BB51-4576-BCD8-8784B42243A8}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9790,7 +11041,127 @@
 														<UML:TaggedValue tag="type" value="DaneUzytkownika"/>
 														<UML:TaggedValue tag="const" value="0"/>
 														<UML:TaggedValue tag="classifier" value="EAID_A3778CC1_264B_4db6_83FC_744F06759C5B"/>
-														<UML:TaggedValue tag="ea_guid" value="{C41A2C72-7EF2-47a7-87B1-B98116673A28}"/>
+														<UML:TaggedValue tag="ea_guid" value="{7A0AD2F9-A7E7-4883-BCF3-9C55B42BBAF7}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyswietlFormularzProsbyOUsuniecieKonta" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="7"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{48D4D338-E964-42f1-A2A7-9B851B5DD2E3}"/>
+												<UML:TaggedValue tag="ea_localid" value="783"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{DA90149F-35BB-47d7-BFF4-83105E5F82EE}" xmi.id="EAID_9E81B1DE_7569_4738_9641_F143DBAFD6D3">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlFormularzProsbyOUsuniecieKonta" xmi.id="EAID_F571E718_518B_4a70_B60F_F5B4D50F9CA0">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-E964-42f1-A2A7-9B851B5DD2E3}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{ED9796BB-3D90-4932-BD83-EE069B1EB48C}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="opis" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="1"/>
+														<UML:TaggedValue tag="type" value="string"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{035420CD-079A-4b4c-B2C7-BFDBB149BEC3}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyswietlInformacjeOKoncie" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="8"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{ED8EBCF5-9993-4b51-AF72-B728E9CF0CDE}"/>
+												<UML:TaggedValue tag="ea_localid" value="784"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlInformacjeOKoncie" xmi.id="EAID_1E7EC6D5_88E7_4940_8EA9_3CA2E1037B7C">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{B5B1A38A-3920-4d33-8C84-277E22CA23B5}" xmi.id="EAID_817F4C24_3EA6_46cb_BDF7_1EA72655DE04">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-9993-4b51-AF72-B728E9CF0CDE}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{9C4231DA-083E-4a7d-926C-0A1B4834F9C4}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9804,17 +11175,56 @@
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="7"/>
+												<UML:TaggedValue tag="position" value="9"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{70933B51-E677-4f7a-BEF2-B43743278586}"/>
-												<UML:TaggedValue tag="ea_localid" value="622"/>
-												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlKomunikat" xmi.id="EAID_3CCC3719_0DBA_4602_B8CF_8D76A6784572">
+												<UML:TaggedValue tag="ea_guid" value="{B58EA04B-2B10-4e13-B895-CD7B2915ACD7}"/>
+												<UML:TaggedValue tag="ea_localid" value="785"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{C5BBD932-4353-418a-8519-57CEC3D13126}" xmi.id="EAID_46DFA3DF_0216_40b2_BB19_1898B526FD48">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlKomunikat" xmi.id="EAID_EFE8FEE4_FFC8_43d7_99C6_816A85D4BFAC">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Qualified name for the interface operation"/>
 													</XMI.extension>
 												</UML:TaggedValue>
-												<UML:TaggedValue tag="ImplementsGuid" value="{C5BBD932-4353-418a-8519-57CEC3D13126}" xmi.id="EAID_7C87F6EF_BEF0_439e_B6BB_93CD0237E88C">
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid0"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="void"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-2B10-4e13-B895-CD7B2915ACD7}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="WyswietlListeUzytkownikow" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="void"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="10"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{86AB7EEF-BA4F-46f8-BFE7-393272752428}"/>
+												<UML:TaggedValue tag="ea_localid" value="786"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.WyswietlListeUzytkownikow" xmi.id="EAID_A590F701_FFA9_4e0d_9FD5_EBF40DC050D9">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{A2880D5F-D4CF-4073-8285-AEB16CAC6F97}" xmi.id="EAID_BD9DEF1C_8C3D_4a82_95A6_0CC9B55F778E">
 													<XMI.extension xmi.extender="Enterprise Architect 2.5">
 														<UML:Comment name="Identifies the interface operation"/>
 													</XMI.extension>
@@ -9829,36 +11239,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-E677-4f7a-BEF2-B43743278586}"/>
-													</UML:ModelElement.taggedValue>
-													<UML:Parameter.defaultValue>
-														<UML:Expression/>
-													</UML:Parameter.defaultValue>
-												</UML:Parameter>
-											</UML:BehavioralFeature.parameter>
-										</UML:Operation>
-										<UML:Operation name="WyswietlListeUzytkownikow" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="type" value="void"/>
-												<UML:TaggedValue tag="const" value="false"/>
-												<UML:TaggedValue tag="synchronised" value="0"/>
-												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="8"/>
-												<UML:TaggedValue tag="returnarray" value="0"/>
-												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{22B3DA08-2287-4062-B5AA-F6C1692AF303}"/>
-												<UML:TaggedValue tag="ea_localid" value="691"/>
-											</UML:ModelElement.taggedValue>
-											<UML:BehavioralFeature.parameter>
-												<UML:Parameter kind="return" visibility="public">
-													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid0"/>
-													</UML:Parameter.type>
-													<UML:ModelElement.taggedValue>
-														<UML:TaggedValue tag="pos" value="0"/>
-														<UML:TaggedValue tag="type" value="void"/>
-														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-2287-4062-B5AA-F6C1692AF303}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-BA4F-46f8-BFE7-393272752428}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9866,13 +11247,13 @@
 												</UML:Parameter>
 												<UML:Parameter name="l" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid9"/>
+														<UML:Classifier xmi.idref="eaxmiid10"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="List&lt;DaneUzytkownika&gt;"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{DBAB968A-D308-4937-9227-3907BA9628B7}"/>
+														<UML:TaggedValue tag="ea_guid" value="{448826CB-88D0-4c67-A229-F202AFEE1588}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9880,17 +11261,27 @@
 												</UML:Parameter>
 											</UML:BehavioralFeature.parameter>
 										</UML:Operation>
-										<UML:Operation name="Wy&#347;wietlFormularzEdycjiKartyKredytowej" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+										<UML:Operation name="Wy&#347;wietlFormularzEdycjiKarty" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
 											<UML:ModelElement.taggedValue>
 												<UML:TaggedValue tag="type" value="void"/>
 												<UML:TaggedValue tag="const" value="false"/>
 												<UML:TaggedValue tag="synchronised" value="0"/>
 												<UML:TaggedValue tag="concurrency" value="Sequential"/>
-												<UML:TaggedValue tag="position" value="9"/>
+												<UML:TaggedValue tag="position" value="11"/>
 												<UML:TaggedValue tag="returnarray" value="0"/>
 												<UML:TaggedValue tag="pure" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{0E2037E5-4AE9-4342-A388-6D9F0B1F3E89}"/>
-												<UML:TaggedValue tag="ea_localid" value="623"/>
+												<UML:TaggedValue tag="ea_guid" value="{D24DC3E7-B50D-4390-8EBF-3E94A6A64C95}"/>
+												<UML:TaggedValue tag="ea_localid" value="787"/>
+												<UML:TaggedValue tag="ImplementsGuid" value="{96460F13-3A66-4c55-8B92-618D3D6E320F}" xmi.id="EAID_0FF3A71B_2359_437b_ADC1_7E4E1DBCA251">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.Wy&#347;wietlFormularzEdycjiKarty" xmi.id="EAID_8E0CEBA9_5FDF_4f10_8DF2_4A13C34F1DD6">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
 											</UML:ModelElement.taggedValue>
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
@@ -9901,7 +11292,7 @@
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="void"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{RETURNID-4AE9-4342-A388-6D9F0B1F3E89}"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-B50D-4390-8EBF-3E94A6A64C95}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -9909,13 +11300,66 @@
 												</UML:Parameter>
 												<UML:Parameter name="DaneU&#380;ytkownika" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid13"/>
+														<UML:Classifier xmi.idref="eaxmiid18"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
 														<UML:TaggedValue tag="type" value="DaneU&#380;ytkownika"/>
 														<UML:TaggedValue tag="const" value="0"/>
-														<UML:TaggedValue tag="ea_guid" value="{DDAD7D7E-A7CA-4efa-9853-312AA834639A}"/>
+														<UML:TaggedValue tag="ea_guid" value="{6E40666C-43F7-4455-B641-6DDD11754358}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+											</UML:BehavioralFeature.parameter>
+										</UML:Operation>
+										<UML:Operation name="ZawiesUzytkownikaButton" visibility="public" ownerScope="instance" isQuery="false" concurrency="sequential">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="type" value="ActionResult"/>
+												<UML:TaggedValue tag="const" value="false"/>
+												<UML:TaggedValue tag="synchronised" value="0"/>
+												<UML:TaggedValue tag="concurrency" value="Sequential"/>
+												<UML:TaggedValue tag="position" value="12"/>
+												<UML:TaggedValue tag="returnarray" value="0"/>
+												<UML:TaggedValue tag="pure" value="0"/>
+												<UML:TaggedValue tag="ea_guid" value="{B18A2F28-6D11-4d25-9123-0A7A541B8F92}"/>
+												<UML:TaggedValue tag="ea_localid" value="788"/>
+												<UML:TaggedValue tag="Implements" value="IZarzadzajWidokamiKlientaV.ZawiesUzytkownikaButton" xmi.id="EAID_0CDF3A7C_C819_46cf_BB2A_BE2C9452DBB3">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Qualified name for the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+												<UML:TaggedValue tag="ImplementsGuid" value="{EB63E797-C5B9-4833-8896-83ED51669B39}" xmi.id="EAID_CB813394_189E_453a_A77B_10B235F188B2">
+													<XMI.extension xmi.extender="Enterprise Architect 2.5">
+														<UML:Comment name="Identifies the interface operation"/>
+													</XMI.extension>
+												</UML:TaggedValue>
+											</UML:ModelElement.taggedValue>
+											<UML:BehavioralFeature.parameter>
+												<UML:Parameter kind="return" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid13"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="ActionResult"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{RETURNID-6D11-4d25-9123-0A7A541B8F92}"/>
+													</UML:ModelElement.taggedValue>
+													<UML:Parameter.defaultValue>
+														<UML:Expression/>
+													</UML:Parameter.defaultValue>
+												</UML:Parameter>
+												<UML:Parameter name="uzytkownikId" kind="in" visibility="public">
+													<UML:Parameter.type>
+														<UML:Classifier xmi.idref="eaxmiid2"/>
+													</UML:Parameter.type>
+													<UML:ModelElement.taggedValue>
+														<UML:TaggedValue tag="pos" value="0"/>
+														<UML:TaggedValue tag="type" value="int"/>
+														<UML:TaggedValue tag="const" value="0"/>
+														<UML:TaggedValue tag="ea_guid" value="{32530021-E9B5-4a9c-8860-265908BB2217}"/>
 													</UML:ModelElement.taggedValue>
 													<UML:Parameter.defaultValue>
 														<UML:Expression/>
@@ -10290,7 +11734,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid10"/>
+														<UML:Classifier xmi.idref="eaxmiid15"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -10343,7 +11787,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid10"/>
+														<UML:Classifier xmi.idref="eaxmiid15"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -10396,7 +11840,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid10"/>
+														<UML:Classifier xmi.idref="eaxmiid15"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -10449,7 +11893,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid11"/>
+														<UML:Classifier xmi.idref="eaxmiid16"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -11088,7 +12532,7 @@
 												</UML:Parameter>
 												<UML:Parameter name="NazwaHotelu" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid14"/>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -11469,7 +12913,7 @@
 												</UML:Parameter>
 												<UML:Parameter name="Nazwa" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid14"/>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -11576,7 +13020,7 @@
 												</UML:Parameter>
 												<UML:Parameter name="Nazwa" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid14"/>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -13185,7 +14629,7 @@
 											<UML:BehavioralFeature.parameter>
 												<UML:Parameter kind="return" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid12"/>
+														<UML:Classifier xmi.idref="eaxmiid17"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -13353,7 +14797,7 @@
 												</UML:Parameter>
 												<UML:Parameter name="Nazwa" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid14"/>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -13460,7 +14904,7 @@
 												</UML:Parameter>
 												<UML:Parameter name="Nazwa" kind="in" visibility="public">
 													<UML:Parameter.type>
-														<UML:Classifier xmi.idref="eaxmiid14"/>
+														<UML:Classifier xmi.idref="eaxmiid12"/>
 													</UML:Parameter.type>
 													<UML:ModelElement.taggedValue>
 														<UML:TaggedValue tag="pos" value="0"/>
@@ -13481,22 +14925,26 @@
 					</UML:Namespace.ownedElement>
 				</UML:Package>
 				<UML:DataType xmi.id="eaxmiid7" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid14" name="string" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid11" name="List&lt;Platnosc&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid12" name="string" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid16" name="List&lt;Platnosc&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid0" name="void" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid16" name="List&lt;IUserkiModel&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid20" name="List&lt;IUserkiModel&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid19" name="UzytkownikEntity" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid6" name="List&lt;IPokojHotelowyModel&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid10" name="bool" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid15" name="bool" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid1" name="Platnosc" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid9" name="List&lt;DaneUzytkownika&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid14" name="Int" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid10" name="List&lt;DaneUzytkownika&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid4" name="Plik" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid15" name="boolean" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid13" name="DaneU&#380;ytkownika" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid11" name="boolean" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid18" name="DaneU&#380;ytkownika" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid8" name="long" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid9" name="UzytkownikDTO" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid2" name="int" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid5" name="Format" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 				<UML:DataType xmi.id="eaxmiid3" name="Rezerwacja" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
-				<UML:DataType xmi.id="eaxmiid12" name="List&lt;IUsterkiModel&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid17" name="List&lt;IUsterkiModel&gt;" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<UML:DataType xmi.id="eaxmiid13" name="ActionResult" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
 			</UML:Namespace.ownedElement>
 		</UML:Model>
 		<UML:Diagram name="Specyfikacja projektowa" xmi.id="EAID_67B62158_092C_4e4e_9529_76E8DAAB2B34" diagramType="ComponentDiagram" owner="EAPK_AFB2A0CF_2221_4272_AD7C_486841587377" toolName="Enterprise Architect 2.5">
@@ -13627,28 +15075,28 @@
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="author" value="Robert"/>
 				<UML:TaggedValue tag="created_date" value="2015-11-03 23:02:20"/>
-				<UML:TaggedValue tag="modified_date" value="2015-11-04 22:07:10"/>
+				<UML:TaggedValue tag="modified_date" value="2015-11-24 19:22:33"/>
 				<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
 				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
 				<UML:TaggedValue tag="ea_localid" value="771"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=2;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<UML:TaggedValue tag="styleex" value="SaveTag=79EF5E2B;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=A537C9A2;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=685;Top=473;Right=943;Bottom=552;" subject="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" seqno="1" style="DUID=022FCB8B;"/>
-				<UML:DiagramElement geometry="Left=4;Top=515;Right=240;Bottom=585;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="2" style="DUID=00E80729;"/>
-				<UML:DiagramElement geometry="Left=49;Top=115;Right=175;Bottom=201;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="3" style="DUID=594E4487;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=852;Top=167;Right=1008;Bottom=263;" subject="EAID_645D69CC_CD21_4683_9C78_8740C061A04C" seqno="4" style="DUID=8237DC53;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=280;Top=471;Right=622;Bottom=604;" subject="EAID_3019760B_3E33_4659_963A_42F81AA25E64" seqno="5" style="DUID=FAD3F8B4;"/>
-				<UML:DiagramElement geometry="Left=681;Top=308;Right=939;Bottom=398;" subject="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" seqno="6" style="DUID=22CCFF5C;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=277;Top=312;Right=619;Bottom=402;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="7" style="DUID=0F30F22F;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
-				<UML:DiagramElement geometry="Left=12;Top=323;Right=248;Bottom=413;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="8" style="DUID=C8405EDD;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=746;Top=538;Right=1090;Bottom=747;" subject="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" seqno="1" style="DUID=022FCB8B;"/>
+				<UML:DiagramElement geometry="Left=20;Top=547;Right=292;Bottom=717;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="2" style="DUID=00E80729;"/>
+				<UML:DiagramElement geometry="Left=47;Top=49;Right=173;Bottom=135;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="3" style="DUID=594E4487;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=909;Top=62;Right=1065;Bottom=158;" subject="EAID_645D69CC_CD21_4683_9C78_8740C061A04C" seqno="4" style="DUID=8237DC53;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=342;Top=540;Right=684;Bottom=749;" subject="EAID_3019760B_3E33_4659_963A_42F81AA25E64" seqno="5" style="DUID=FAD3F8B4;"/>
+				<UML:DiagramElement geometry="Left=733;Top=215;Right=1077;Bottom=426;" subject="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" seqno="6" style="DUID=22CCFF5C;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=353;Top=206;Right=695;Bottom=417;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="7" style="DUID=0F30F22F;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=42;Top=211;Right=314;Bottom=383;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="8" style="DUID=C8405EDD;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style=";Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=594E4487;SOID=C8405EDD;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" style=";Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style=";Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Edytuj informacje o koncie" xmi.id="EAID_006E9136_2103_430a_B763_587345764478" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
@@ -13675,9 +15123,9 @@
 				<UML:DiagramElement geometry="Left=277;Top=312;Right=619;Bottom=402;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="7" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=805207C8;"/>
 				<UML:DiagramElement geometry="Left=12;Top=323;Right=248;Bottom=413;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="8" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=531F0AA9;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=77548609;SOID=531F0AA9;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" style="Mode=3;EOID=805207C8;SOID=254E5DA8;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style="Mode=3;EOID=531F0AA9;SOID=9138FE50;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style="Mode=3;EOID=E83D0419;SOID=5ADEBE86;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Edytuj u&#380;ytkownika" xmi.id="EAID_75555F85_8423_4120_88EE_62040244C128" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
@@ -13704,9 +15152,9 @@
 				<UML:DiagramElement geometry="Left=73;Top=235;Right=309;Bottom=355;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="7" style="DUID=D2CCEB3A;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
 				<UML:DiagramElement geometry="Left=59;Top=58;Right=169;Bottom=123;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="8" style="DUID=69409721;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
 				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=69409721;SOID=D2CCEB3A;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style="Mode=3;EOID=D2CCEB3A;SOID=BD66885B;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" style="Mode=3;EOID=001AD6BB;SOID=698B9E49;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style="Mode=3;EOID=69BC7336;SOID=D1BB32A1;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Dodaj kart&#281; kredytow&#261;" xmi.id="EAID_ADB153DE_0CDE_4b9a_B39F_C282E3AAC453" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
@@ -13732,9 +15180,9 @@
 				<UML:DiagramElement geometry="Left=503;Top=253;Right=729;Bottom=343;" subject="EAID_58800667_41DD_407d_B17F_815191F00466" seqno="6" style="DUID=B2EF9529;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
 				<UML:DiagramElement geometry="Left=203;Top=87;Right=313;Bottom=152;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="7" style="DUID=E07C0E17;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
 				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=E07C0E17;SOID=1C62B6AD;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style="Mode=3;EOID=1C62B6AD;SOID=9D5C9E61;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
 				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_00DAFD87_D9DC_4044_983A_65DC371627FD" style="Mode=3;EOID=B2EF9529;SOID=5A574F6B;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style="Mode=3;EOID=D8DE7FDF;SOID=B73702D3;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Edytuj kart&#281; kredytow&#261;" xmi.id="EAID_2F45A86A_ADC1_42ae_8B0F_E31B4D609D0F" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
@@ -13761,9 +15209,9 @@
 				<UML:DiagramElement geometry="Left=34;Top=156;Right=306;Bottom=289;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="7" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=4B295FAD;"/>
 				<UML:DiagramElement geometry="Left=66;Top=18;Right=192;Bottom=104;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="8" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=B7C53B1D;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=B7C53B1D;SOID=4B295FAD;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style="Mode=3;EOID=4B295FAD;SOID=5CF29635;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" style="Mode=3;EOID=0C1CBFC0;SOID=F51D766C;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style="Mode=3;EOID=BB97B1F0;SOID=F5962A1F;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Wy&#347;wietl list&#281; u&#380;ytkowników" xmi.id="EAID_EAB55E6D_F597_413d_B286_992D90772AAC" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
@@ -13789,10 +15237,88 @@
 				<UML:DiagramElement geometry="Left=10;Top=336;Right=282;Bottom=467;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="6" style="DUID=0081B5E8;"/>
 				<UML:DiagramElement geometry="Left=66;Top=18;Right=192;Bottom=104;" subject="EAID_DA8EDB9B_7F77_46b2_8D22_C97C61C92E68" seqno="7" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=71B0D9A9;"/>
 				<UML:DiagramElement geometry="Left=714;Top=32;Right=824;Bottom=97;" subject="EAID_D1F270EC_7279_4567_8138_455E8531A109" seqno="8" style="DUID=F5A39EBB;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C7D97CB_21EE_4a2f_A857_4310DA656801" style="Mode=3;EOID=074F9F41;SOID=9CB3212B;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_941DE4F9_697B_4d0d_895D_E58DE19D1D4E" style="Mode=3;EOID=AC495041;SOID=0081B5E8;Color=-1;LWidth=0;Hidden=0;"/>
-				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2E263F0F_6EFA_479a_B944_79D7C66748EB" style="Mode=3;EOID=A5994174;SOID=ECAD8D49;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style=";Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style=";Hidden=0;"/>
 				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE0FB1EC_C713_4a06_A12B_2D549C2C47EF" style="Mode=3;EOID=71B0D9A9;SOID=AC495041;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Wy&#347;wietl informacje o koncie" xmi.id="EAID_A680D967_A7D8_42ca_B905_C1F9DC246124" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Robert"/>
+				<UML:TaggedValue tag="created_date" value="2015-11-24 18:56:52"/>
+				<UML:TaggedValue tag="modified_date" value="2015-11-24 19:25:33"/>
+				<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="790"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=2;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=2CB8D210;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=723;Top=67;Right=1067;Bottom=278;" subject="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" seqno="1" style="DUID=B52A47DB;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=370;Top=64;Right=714;Bottom=275;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="2" style="DUID=7AF074A6;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=21;Top=64;Right=365;Bottom=275;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="3" style="DUID=615CB388;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=20;Top=351;Right=364;Bottom=560;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="4" style="DUID=F2097303;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=389;Top=353;Right=733;Bottom=562;" subject="EAID_3019760B_3E33_4659_963A_42F81AA25E64" seqno="5" style="DUID=657D31EB;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=726;Top=358;Right=1070;Bottom=567;" subject="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" seqno="6" style="DUID=192D83E2;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style="Mode=3;EOID=615CB388;SOID=F2097303;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style="Mode=3;EOID=7AF074A6;SOID=657D31EB;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style="Mode=3;EOID=B52A47DB;SOID=192D83E2;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Zawie&#347; u&#380;ytkownika" xmi.id="EAID_0F376062_4C58_4728_B1F6_25D1503FC007" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Robert"/>
+				<UML:TaggedValue tag="created_date" value="2015-11-24 18:57:49"/>
+				<UML:TaggedValue tag="modified_date" value="2015-11-24 19:24:31"/>
+				<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="791"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=2;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=10C82003;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=722;Top=41;Right=1066;Bottom=252;" subject="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" seqno="1" style="DUID=164EB2F0;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=4;Top=36;Right=348;Bottom=247;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="2" style="DUID=EFAC905B;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=360;Top=39;Right=704;Bottom=250;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="3" style="DUID=01D473B0;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=748;Top=393;Right=1092;Bottom=771;" subject="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" seqno="4" style="DUID=36FFBDC2;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=34;Top=407;Right=306;Bottom=707;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="5" style="DUID=FD61B62E;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=361;Top=403;Right=705;Bottom=781;" subject="EAID_3019760B_3E33_4659_963A_42F81AA25E64" seqno="6" style="DUID=169164D9;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style="Mode=3;EOID=164EB2F0;SOID=36FFBDC2;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style="Mode=3;EOID=EFAC905B;SOID=FD61B62E;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style="Mode=3;EOID=01D473B0;SOID=169164D9;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+		<UML:Diagram name="Wy&#347;lij pro&#347;b&#281; o usni&#281;cie konta" xmi.id="EAID_31B91E01_D9D7_45ef_97D8_F0E9E9DA70F0" diagramType="ClassDiagram" owner="EAPK_7763DAAD_A480_4783_A023_02951B53008E" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="Robert"/>
+				<UML:TaggedValue tag="created_date" value="2015-11-24 18:59:21"/>
+				<UML:TaggedValue tag="modified_date" value="2015-11-24 19:25:42"/>
+				<UML:TaggedValue tag="package" value="EAPK_7763DAAD_A480_4783_A023_02951B53008E"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="792"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=2;PPgs.cy=1;DocSize.cx=780;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=F05B75FE;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=702;Top=54;Right=1046;Bottom=265;" subject="EAID_B4437331_32D1_4a05_B313_AE6F35A05800" seqno="1" style="DUID=C715BEE9;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=6;Top=41;Right=350;Bottom=252;" subject="EAID_E70FF13E_C6DB_41ab_A46F_C021A14D8896" seqno="2" style="DUID=9F24EE0B;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=364;Top=45;Right=708;Bottom=256;" subject="EAID_304C4959_22FC_42f9_9728_CFB754693D55" seqno="3" style="DUID=C588A56B;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=714;Top=415;Right=1058;Bottom=624;" subject="EAID_F4FB9DDD_1AF2_4039_9767_F6B2B494CC79" seqno="4" style="DUID=DB3C0650;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=346;Top=434;Right=690;Bottom=643;" subject="EAID_3019760B_3E33_4659_963A_42F81AA25E64" seqno="5" style="DUID=E6085363;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="Left=30;Top=441;Right=302;Bottom=611;" subject="EAID_95027B5A_93B5_4a9d_9CDC_A971497C7087" seqno="6" style="DUID=F956B752;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8508EE7F_AC16_40f1_A0C7_DF1FD8871B35" style="Mode=3;EOID=C715BEE9;SOID=DB3C0650;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8C73B987_EDAE_4379_8140_0747BC0C8A6C" style="Mode=3;EOID=C588A56B;SOID=E6085363;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F023EA96_A3A5_4f00_B5FA_0F2CE5066283" style="Mode=3;EOID=9F24EE0B;SOID=F956B752;Color=-1;LWidth=0;Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Wygeneruj rachunek, Zaksi&#281;guj p&#322;atno&#347;&#263;, Zapisz do pliku, Drukuj" xmi.id="EAID_DC28ACEB_A780_4309_9907_593F0B9360E3" diagramType="ClassDiagram" owner="EAPK_21178C5F_B331_4591_845F_AE32E1227945" toolName="Enterprise Architect 2.5">
