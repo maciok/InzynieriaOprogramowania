@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ProjektMVP.Models.Interfaces;
-using ProjektMVP.Presenters;
+﻿using ProjektMVP.Models.Interfaces;
+using ProjektMVP.Controllers;
 
 namespace ProjektMVP.Views.ZarzadzenieHotelami
 {
@@ -15,7 +10,7 @@ namespace ProjektMVP.Views.ZarzadzenieHotelami
 
         public IDaneHoteloweModel DodajHotel(IDaneHoteloweModel daneHotelowe)
         {
-            return View(zarzadzenieHotelamiController.DodajHotel(daneHotelowe));
+            return zarzadzenieHotelamiController.DodajHotel(daneHotelowe);
         }
 
     }

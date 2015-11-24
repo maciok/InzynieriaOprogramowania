@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using ProjektMVP.Models.Interfaces;
 using ProjektMVP.Models;
 
-namespace ProjektMVP.Presenters
+namespace ProjektMVP.Controllers
 {
     class ZarzadzenieHotelamiController: Controller
     {

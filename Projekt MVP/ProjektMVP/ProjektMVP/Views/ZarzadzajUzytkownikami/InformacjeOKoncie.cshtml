@@ -1,0 +1,63 @@
+﻿@model ProjektMVP.DTO.UzytkownikDTO
+
+@{
+    ViewBag.Title = "Informacje o koncie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Informacje o koncie</h2>
+
+<div>
+    <h4>Uzytkownik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Imie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Imie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwisko)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwisko)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HotelId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HotelId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PermissionsId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PermissionsId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Karta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Karta)
+        </dd>
+
+    </dl>
+</div>

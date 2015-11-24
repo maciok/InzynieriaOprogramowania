@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using ProjektMVP.Models;
-using ProjektMVP.Presenters.Interfaces;
+using ProjektMVP.Controllers.Interfaces;
 
 namespace ProjektMVP.Views.DaneRezerwacjiView
 {

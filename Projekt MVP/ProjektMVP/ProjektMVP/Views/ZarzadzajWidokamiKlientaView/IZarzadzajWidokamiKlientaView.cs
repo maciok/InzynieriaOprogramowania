@@ -6,9 +6,8 @@
 
     public interface IZarzadzajWidokamiKlientaView
     {
-        ActionResult KliknijPrzyciskDodajUzytkownika();
-        ActionResult WyswietlFormularzDodawaniaLubEdytowaniaUzytkownika(UzytkownikDTO dto);
+
         ActionResult KliknijWyswietlListeUzytkownikow();
-        ActionResult WyswietlListeUzytkownikow(List<UzytkownikDTO>);
+        ActionResult WyswietlListeUzytkownikow(List<UzytkownikDTO> list);
     }
 }

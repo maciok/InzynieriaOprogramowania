@@ -1,4 +1,4 @@
-﻿using ProjektMVP.Presenters.Interfaces;
+﻿using ProjektMVP.Controllers.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using ProjektMVP.Models;
 using ProjektMVP.Models.Interfaces;
 
-namespace ProjektMVP.Presenters
+namespace ProjektMVP.Controllers
 {
 #pragma warning disable CS0162 // Unreachable code detected
 

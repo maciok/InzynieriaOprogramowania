@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ProjektMVP.Models;
+﻿using System.Web.Mvc;
 using ProjektMVP.Models.Interfaces;
-using ProjektMVP.Presenters;
+using ProjektMVP.Controllers;
 
 namespace ProjektMVP.Views.ZarzadzanieHotelem
 {
@@ -15,42 +10,42 @@ namespace ProjektMVP.Views.ZarzadzanieHotelem
 
         public IDaneHoteloweModel PobierzHotel(int hotelID)
         {
-            return new View(zarzadzanieHotelemController.WyszukajHotel(hotelID));
+            return zarzadzanieHotelemController.WyszukajHotel(hotelID);
         }
 
         public ActionResult EdytujParametryHotelu(int hotelId)
         {
-            return new View(zarzadzanieHotelemController.EdytujParametryHotelu(hotelId)); ;
+            return zarzadzanieHotelemController.EdytujParametryHotelu(hotelId);
         }
 
         public bool ZapiszDaneHotelu(IDaneHoteloweModel data)
         {
-            return new View(zarzadzanieHotelemController.ZapiszDaneHotelu(data));
+            return zarzadzanieHotelemController.ZapiszDaneHotelu(data);
         }
 
         public void DodajPokojDoHotelu(IPokojHotelowyModel pokoj)
         {
-            return new View(zarzadzanieHotelemController.DodajPokojDoHotelu(pokoj));
+            zarzadzanieHotelemController.DodajPokojDoHotelu(pokoj);
         }
 
         public void EdytujParametryPokoju(int id, IPokojHotelowyModel pokoj)
         {
-            return new View(zarzadzanieHotelemController.EdytujParametryPokoju(id, pokoj));
+            zarzadzanieHotelemController.EdytujParametryPokoju(id, pokoj);
         }
 
         public IPokojHotelowyModel WyszukajPokoj(int id)
         {
-            return new View(zarzadzanieHotelemController.WyszukajPokoj(id));
+            return zarzadzanieHotelemController.WyszukajPokoj(id);
         }
 
         public ISalaKonferencyjnaModel WyszukaSalaKonferencyjna(int id)
         {
-            return new View(zarzadzanieHotelemController.WyszukaSalaKonferencyjna(id));
+            return zarzadzanieHotelemController.WyszukaSalaKonferencyjna(id);
         }
 
         public IDaneHoteloweModel WyszukajHotel(int id)
         {
-            return new View(zarzadzanieHotelemController.WyszukaSalaKonferencyjna(id));
+            return zarzadzanieHotelemController.WyszukajHotel(id);
         }
     }
 }

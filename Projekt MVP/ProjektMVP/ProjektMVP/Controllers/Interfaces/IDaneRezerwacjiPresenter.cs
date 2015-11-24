@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace ProjektMVP.Presenters.Interfaces
+namespace ProjektMVP.Controllers.Interfaces
 {
     public interface IDaneRezerwacjiPresenter
     {

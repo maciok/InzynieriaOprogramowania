@@ -1,7 +1,7 @@
 ﻿using ProjektMVP.Models;
 using System.Web.Mvc;
 using ProjektMVP.Models.Interfaces;
-using ProjektMVP.Presenters;
+using ProjektMVP.Controllers;
 
 namespace ProjektMVP.Views.WidokiManageraHotelu
 {

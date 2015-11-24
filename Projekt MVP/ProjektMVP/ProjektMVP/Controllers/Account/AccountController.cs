@@ -7,7 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ProjektMVP.Models.Account;
 
-namespace ProjektMVP.Presenters.Account
+namespace ProjektMVP.Controllers.Account
 {
     [Authorize]
     public class AccountController : Controller

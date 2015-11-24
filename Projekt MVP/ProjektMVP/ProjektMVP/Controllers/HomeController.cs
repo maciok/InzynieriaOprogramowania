@@ -1,7 +1,7 @@
-﻿using System.Web.Mvc;
-
-namespace ProjektMVP.Presenters
+﻿namespace ProjektMVP.Controllers
 {
+    using System.Web.Mvc;
+
     [RoutePrefix("Home")]
     public class HomeController : Controller
     {
@@ -12,8 +12,6 @@ namespace ProjektMVP.Presenters
             return View();
         }
 
-
-
         [Route("About")]
         public ActionResult About()
         {
@@ -22,7 +20,6 @@ namespace ProjektMVP.Presenters
         }
 
         [Route("Contact")]
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

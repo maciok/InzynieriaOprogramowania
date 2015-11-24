@@ -1,7 +1,9 @@
-﻿namespace ProjektMVP.Views.ZarzadzajWidokamiKlientaView
+﻿using System.Collections.Generic;
+
+namespace ProjektMVP.Views.ZarzadzajWidokamiKlientaView
 {
-    using Presenters;
-    using Presenters.Interfaces;
+    using Controllers;
+    using Controllers.Interfaces;
     using System.Web.Mvc;
     using DTO;
 
@@ -19,19 +21,14 @@
             this.presenter = presenter;
         }
 
-        public ActionResult KliknijPrzyciskDodajUzytkownika()
+        public ActionResult KliknijWyswietlListeUzytkownikow()
         {
-            return View("Error");
+            throw new System.NotImplementedException();
         }
 
-        public ActionResult WyswietlFormularzDodawaniaLubEdytowaniaUzytkownika(UzytkownikDTO dto)
+        public ActionResult WyswietlListeUzytkownikow(List<UzytkownikDTO> list)
         {
-            if (dto.Id.HasValue)
-                presenter.EdytujUzytkownika(dto);
-            else
-                presenter.DodajUzytkownika(dto);
-
-            return View("Error");
+            throw new System.NotImplementedException();
         }
     }
 }

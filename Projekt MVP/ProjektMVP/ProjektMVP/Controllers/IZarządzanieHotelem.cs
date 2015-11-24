@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using ProjektMVP.Models.Interfaces;
 
-namespace ProjektMVP.Presenters
+namespace ProjektMVP.Controllers
 {
     public interface IZarządzanieHotelem
     {

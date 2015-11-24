@@ -4,7 +4,7 @@ using ProjektMVP.Models;
 using ProjektMVP.Models.Interfaces;
 using ProjektMVP.Views.WidokiManageraHotelu;
 
-namespace ProjektMVP.Presenters
+namespace ProjektMVP.Controllers
 {
     [RoutePrefix("ZarzadzanieHotelem")]
     public class ZarzadzanieHotelemController : Controller, IZarządzanieHotelem

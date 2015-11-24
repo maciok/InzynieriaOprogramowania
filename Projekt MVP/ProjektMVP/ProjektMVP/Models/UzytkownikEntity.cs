@@ -1,23 +1,25 @@
 ﻿namespace ProjektMVP.Models
 {
-    using DTO;
+    using System.Data.Entity;
 
     public class UzytkownikEntity
     {
         public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
-        public int? KartaKredytowaId { get; set; }
+        public string Login { get; set; }
+        public int PermissionsId { get; set; }
+        public int HotelId { get; set; }
+        public int? KartaKredytowaId { get; set; } 
+    }
 
-        public static UzytkownikEntity MapDtoToEntity(UzytkownikDTO dto)
+    public class UzytkownikContext : DbContext
+    {
+        public UzytkownikContext()
         {
-            return new UzytkownikEntity
-            {
-                Id = dto.Id ?? 0,
-                Imie = dto.Imie,
-                Nazwisko = dto.Nazwisko,
-                KartaKredytowaId = dto.Karta?.KartaKredytowaId 
-            };
+            Database.SetInitializer<UzytkownikContext>(null);
         }
+
+        public DbSet<UzytkownikEntity> Uzytkownicy { get; set; }
     }
 }
