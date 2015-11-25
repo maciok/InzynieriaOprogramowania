@@ -10,9 +10,9 @@ namespace ProjektMVP.Controllers
     public class ZarzadzanieHotelemController : Controller, IZarządzanieHotelem
     {
         private DaneHoteloweDB db;
-        private static IFormularzEdycjiParametrówHotelu _formularzEdycjiParametrówHotelu;
-        private static IZarzadzanieHotelami _zarzadzanieHotelami;
-        private static IZarządzanieHotelem _zarządzanieHotelem;
+        private static IFormularzEdycjiParametrówHotelu _formularzEdycjiParametrówHotelu; 
+        private static IZarzadzanieHotelami _zarzadzanieHotelami;       // Model Interface
+        private static IZarządzanieHotelem _zarządzanieHotelem;         // Controler Interface
 
         public ZarzadzanieHotelemController()
         {
@@ -65,6 +65,26 @@ namespace ProjektMVP.Controllers
         public void DodajHotel(IDaneHoteloweModel daneHotelowe)
         {
             _zarzadzanieHotelami.DodajHotel(daneHotelowe);
+        }
+
+        [Route("OdblokujPokoj/{pokojID}")]
+        public ActionResult OdblokujPokoj(int pokojID)
+        {
+            IPokojHotelowyModel dane = _zarzadzanieHotelami.PobierzPokoj(pokojID);
+            return _formularzEdycjiParametrówHotelu.PokażFormularzOdblokowaniaPokoju(dane);
+        }
+
+        [Route("ZablokujPokoj/{pokojID}")]
+        public ActionResult ZablokujPokoj(int pokojID)
+        {
+            IPokojHotelowyModel dane = _zarzadzanieHotelami.PobierzPokoj(pokojID);
+            return _formularzEdycjiParametrówHotelu.PokażFormularzZablokowaniaPokoju(dane);
+        }
+
+        [Route("ZapiszPokoj/{pokoj}")]
+        public bool ZapiszPokoj(IPokojHotelowyModel pokoj)
+        {
+            return _zarzadzanieHotelami.ZapiszPokoj(pokoj);
         }
     }
 }

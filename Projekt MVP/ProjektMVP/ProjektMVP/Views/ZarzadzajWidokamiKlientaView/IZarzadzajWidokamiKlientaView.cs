@@ -6,7 +6,6 @@
 
     public interface IZarzadzajWidokamiKlientaView
     {
-
         ActionResult KliknijWyswietlListeUzytkownikow();
         ActionResult WyswietlListeUzytkownikow(List<UzytkownikDTO> list);
     }
