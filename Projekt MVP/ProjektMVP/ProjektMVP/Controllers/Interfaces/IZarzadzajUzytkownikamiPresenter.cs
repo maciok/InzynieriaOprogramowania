@@ -6,6 +6,16 @@
 
     public interface IZarzadzajUzytkownikamiPresenter
     {
+        #region Maciej Skałba
+        //Iteracja 1
+        ActionResult WyswietlFormularzEdycjiKontaAktualnegoUzytkownika(int uzytkownikId);
+        ActionResult EdytujInformacjeOKoncieButton(UzytkownikDTO uzytkownik);
+        bool EdytujInformacjeOKoncie(UzytkownikDTO uzytkownik);
+        ActionResult WyswietlFormularzDodaniaKartyKredytowej(int uzytkownikId);
+        ActionResult ZapiszKarteKredytowaButton(int uzytkownikId, KartaKredytowaDTO karta);
+        bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaDTO karta);
+        #endregion
+
         #region Robert Witkowski
         int DodajUzytkownika(UzytkownikDTO dto);
         UzytkownikDTO EdytujUzytkownika(UzytkownikDTO dto);

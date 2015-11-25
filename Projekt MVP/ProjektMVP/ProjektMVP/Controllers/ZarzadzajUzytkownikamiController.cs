@@ -1,4 +1,6 @@
-﻿namespace ProjektMVP.Controllers
+﻿using System.Security.Policy;
+
+namespace ProjektMVP.Controllers
 {
     using Models;
     using Models.Interfaces;
@@ -17,6 +19,53 @@
         {
             uzytkownikModel = new UzytkownikModel();
         }
+
+        #region Maciej Skałba
+        //Iteracja 1
+        public ActionResult WyswietlFormularzEdycjiKontaAktualnegoUzytkownika(int uzytkownikId)
+        {
+            var uzytkownik = uzytkownikModel.PobierzUzytkownika(uzytkownikId);
+            var dto = UzytkownikMapper.MapEntityToDto(uzytkownik);
+            return View("FormularzEdycjiKontaUzytkownika", dto);
+        }
+
+        public ActionResult EdytujInformacjeOKoncieButton(UzytkownikDTO uzytkownik)
+        {
+            var result = EdytujInformacjeOKoncie(uzytkownik);
+            if(result == true)
+                return View("Index");
+            else
+                return View("Error");
+        }
+
+        public bool EdytujInformacjeOKoncie(UzytkownikDTO uzytkownik)
+        {
+            var entity = UzytkownikMapper.MapDtoToEntity(uzytkownik);
+            var result = uzytkownikModel.EdytujInformacjeOKoncie(entity);
+            return result;
+        }
+
+        public ActionResult WyswietlFormularzDodaniaKartyKredytowej(int uzytkownikId)
+        {
+            return View("FormularzDodaniaKartyKredytowej", uzytkownikId);
+        }
+
+        public ActionResult ZapiszKarteKredytowaButton(int uzytkownikId, KartaKredytowaDTO karta)
+        {
+            var result = ZapiszKarteKredytowa(uzytkownikId, karta);
+            if (result == true)
+                return View("FormularzInformacjiOKarcieKredytowej");
+            else
+                return View("Error");
+        }
+
+        public bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaDTO karta)
+        {
+            var entity = KartaKredytowaMapper.MapDtoToEntity(karta);
+            var result = uzytkownikModel.ZapiszKarteKredytowa(uzytkownikId, entity);
+            return result;
+        }
+        #endregion
 
         #region Robert Witkowski
         //Iteracja 1

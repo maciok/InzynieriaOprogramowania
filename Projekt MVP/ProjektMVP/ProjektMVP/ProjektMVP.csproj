@@ -199,6 +199,8 @@
     <Compile Include="Models\Interfaces\ISalaKonferencyjnaModel.cs" />
     <Compile Include="Models\Interfaces\IZarzadzanieHotelami.cs" />
     <Compile Include="Models\Interfaces\IUzytkownikModel.cs" />
+    <Compile Include="Models\KartaKredytowaEntity.cs" />
+    <Compile Include="Models\KartaKredytowaMapper.cs" />
     <Compile Include="Models\PlatnoscEntity.cs" />
     <Compile Include="Models\PlatnosciModel.cs" />
     <Compile Include="Models\RezerwacjaEntity.cs" />
@@ -300,6 +302,9 @@
     <Content Include="Views\ZarzadzajUzytkownikami\InformacjeOKoncie.cshtml" />
     <Content Include="Views\ZarzadzajUzytkownikami\FormularzProsbyOUsuniecieKonta.cshtml" />
     <Content Include="Views\ZarzadzajUzytkownikami\Index.cshtml" />
+    <Content Include="Views\ZarzadzajUzytkownikami\FormularzEdycjiKontaUzytkownika.cshtml" />
+    <Content Include="Views\ZarzadzajUzytkownikami\FormularzDodaniaKartyKredytowej.cshtml" />
+    <Content Include="Views\ZarzadzajUzytkownikami\FormularzInformacjiOKarcieKredytowej.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

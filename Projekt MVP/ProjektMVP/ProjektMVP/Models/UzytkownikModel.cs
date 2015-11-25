@@ -1,8 +1,6 @@
-﻿using System.Data.Entity;
-using System.Linq;
-
-namespace ProjektMVP.Models
+﻿namespace ProjektMVP.Models
 {
+    using System.Data.Entity;
     using System;
     using System.Collections.Generic;
     using Interfaces;
@@ -15,6 +13,21 @@ namespace ProjektMVP.Models
         {
             db = new UzytkownikContext();
         }
+
+        #region Maciej Skałba
+        //Iteracja 1
+        public bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaEntity entity)
+        {
+            //Zapisujemy informacje w bazie
+            return true;
+        }
+
+        public bool EdytujInformacjeOKoncie(UzytkownikEntity entity)
+        {
+            //Zapisujemy informacje w bazie
+            return true;
+        }
+        #endregion
 
         #region Robert Witkowski
         //Iteracja 1

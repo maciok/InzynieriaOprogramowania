@@ -4,6 +4,12 @@
 
     public interface IUzytkownikModel
     {
+        #region Maciej Skałba
+        //Iteracja 1
+        bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaEntity entity);
+        bool EdytujInformacjeOKoncie(UzytkownikEntity entity);
+        #endregion
+
         #region Robert Witkowski
         //Iteracja 1
         int ZapiszNowegoUzytkownika(UzytkownikEntity uzytkownik);
