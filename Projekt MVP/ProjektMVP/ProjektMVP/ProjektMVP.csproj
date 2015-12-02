@@ -203,9 +203,7 @@
     <Compile Include="Models\KartaKredytowaMapper.cs" />
     <Compile Include="Models\PlatnoscEntity.cs" />
     <Compile Include="Models\PlatnosciModel.cs" />
-    <Compile Include="Models\PokojHotelowy.cs" />
     <Compile Include="Models\RezerwacjaEntity.cs" />
-    <Compile Include="Models\SalaKonferencyjna.cs" />
     <Compile Include="Models\UzytkownikEntity.cs" />
     <Compile Include="Models\UzytkownikMapper.cs" />
     <Compile Include="Models\UzytkownikModel.cs" />
@@ -307,11 +305,6 @@
     <Content Include="Views\ZarzadzajUzytkownikami\FormularzEdycjiKontaUzytkownika.cshtml" />
     <Content Include="Views\ZarzadzajUzytkownikami\FormularzDodaniaKartyKredytowej.cshtml" />
     <Content Include="Views\ZarzadzajUzytkownikami\FormularzInformacjiOKarcieKredytowej.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\FormularzEdycjiParametrówHotelu.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\EdytujSalaKonferencyjnaView.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\EdytujPokojHotelowyView.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\FormularzOdblokowaniaPokojuView.cshtml" />
-    <Content Include="Views\WidokiManageraHotelu\FormularzZablokowaniaPokojuView.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

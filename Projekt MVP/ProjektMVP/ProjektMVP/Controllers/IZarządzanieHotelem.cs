@@ -13,6 +13,5 @@ namespace ProjektMVP.Controllers
         ISalaKonferencyjnaModel WyszukaSalaKonferencyjna(int id);
         IDaneHoteloweModel WyszukajHotel(int id);
         void DodajHotel(IDaneHoteloweModel daneHotelowe);
-        bool ZapiszPokoj(IPokojHotelowyModel pokoj);
     }
 }
