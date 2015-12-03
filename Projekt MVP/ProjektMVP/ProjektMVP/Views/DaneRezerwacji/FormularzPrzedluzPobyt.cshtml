@@ -1,0 +1,39 @@
+﻿@model ProjektMVP.DTO.RezerwacjaPrzedluzPobytDTO
+
+@{
+    ViewBag.Title = "Przedluz Pobyt";
+}
+
+<h2>Formularz przedłużenia rezerwacji</h2>
+
+@* Error Message *@
+@if (ViewBag.Message != null) {
+    <div style="color:red">@ViewBag.Message</div>
+}
+
+
+@using (Html.BeginForm("PrzedluzPobyt", "DaneRezerwacji", FormMethod.Post)) {
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Data, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Data, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Data, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Przedłuż" class="btn btn-default" />
+                <input type="button" value="Cofnij" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home")'" />
+            </div>
+        </div>
+
+    </div>
+}
+
+

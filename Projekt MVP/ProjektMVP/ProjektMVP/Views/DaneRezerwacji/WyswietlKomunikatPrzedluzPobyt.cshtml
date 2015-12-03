@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "WyswietlKomunikatPrzedluzPobyt";
+}
+
+@{if (ViewBag.Success != null && ViewBag.Success) {
+        <h2>Przedłużono datę pobytu.</h2>
+        <p>Termin rezerwacji został przedłużony do wybranej przez Ciebie daty. Prosimy o uiszczenie opłaty za dodatkowe dni pobytu. 
+        <br/>Dziękujemy.</p>
+    } else {
+        <h2>Brak miejsc.</h2>
+        <p>Przepraszamy, ale nie ma możliwości przedłużenia pobytu. Prosimy o wykwaterowanie się przed zakończeniem doby hotelowej w ostatnim dniu rezerwacji. 
+        <br/>Dziękujemy.</p>
+    }
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="button" value="Wróć" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home")'" />
+        </div>
+    </div>
+}

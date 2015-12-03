@@ -7,19 +7,25 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using ProjektMVP.Models;
 using ProjektMVP.Models.Interfaces;
+using ProjektMVP.DTO;
 
 namespace ProjektMVP.Controllers
 {
 #pragma warning disable CS0162 // Unreachable code detected
 
+    [RoutePrefix("Rezerwacja")]
     public class DaneRezerwacjiController : Controller, IDaneRezerwacjiPresenter
     {
         private static IPlatnosciModel _platnosc;
+        private static IRezerwacjaModel _rezerwacja;
 
         public DaneRezerwacjiController()
         {
             _platnosc = new PlatnosciModel();
+            _rezerwacja = new RezerwacjaModel();
         }
+
+        #region Iteracja1
 
         public bool ZaksiegujPlatnosc(PlatnoscEntity platnosc)
         {
@@ -53,6 +59,28 @@ namespace ProjektMVP.Controllers
         {
             //drukowanie...
         }
+        #endregion
+
+        #region Iteracja2
+
+        [Route("Extend/{dto.Id}")]
+        [HttpGet]
+        public ActionResult WyswietlPrzedluzPobyt(RezerwacjaPrzedluzPobytDTO dto)
+        {
+            return View("FormularzPrzedluzPobyt");
+        }
+
+        [Route("Extend/{dto.Id}")]
+        [HttpPost]
+        public ActionResult PrzedluzPobyt(RezerwacjaPrzedluzPobytDTO dto)
+        {
+            var result = _rezerwacja.PrzedluzPobyt(dto);
+            ViewBag.Success = (Nullable<bool>)result;
+
+            return View("WyswietlKomunikatPrzedluzPobyt");
+        }
+
+        #endregion
     }
 #pragma warning restore CS0162 // Unreachable code detected
 }
