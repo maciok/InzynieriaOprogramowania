@@ -231,6 +231,8 @@
     <Compile Include="Startup.cs" />
     <Compile Include="Views\DaneRezerwacji\DaneRezerwacjiView.cs" />
     <Compile Include="Views\DaneRezerwacji\IDaneRezerwacjiView.cs" />
+    <Compile Include="Views\ZarzadzajUzytkownikami\IZarzadzajUzytkownikamiView.cs" />
+    <Compile Include="Views\ZarzadzajUzytkownikami\ZarzadzajUzytkownikamiView.cs" />
     <Compile Include="Views\ZarzadzajWidokamiKlientaView\IZarzadzajWidokamiKlientaView.cs" />
     <Compile Include="Views\WidokiManageraHotelu\FormularzEdycjiParametrówHoteluViewController.cs" />
     <Compile Include="Views\WidokiManageraHotelu\IFormularzEdycjiParametrówHotelu.cs" />

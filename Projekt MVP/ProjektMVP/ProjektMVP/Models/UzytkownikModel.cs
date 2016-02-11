@@ -14,8 +14,17 @@
             db = new UzytkownikContext();
         }
 
+        #region Adam Popławski
+        public bool ZmienStatusUzytkownika(Status status)
+        {
+            //Zapisujemy w bazie
+            return true;
+        }
+        #endregion
+
         #region Maciej Skałba
         //Iteracja 1
+
         public bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaEntity entity)
         {
             //Zapisujemy informacje w bazie

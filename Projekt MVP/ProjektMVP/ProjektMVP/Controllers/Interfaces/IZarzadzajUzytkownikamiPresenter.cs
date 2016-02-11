@@ -1,4 +1,6 @@
-﻿namespace ProjektMVP.Controllers.Interfaces
+﻿using ProjektMVP.Models.Interfaces;
+
+namespace ProjektMVP.Controllers.Interfaces
 {
     using System.Web.Mvc;
     using DTO;
@@ -6,6 +8,10 @@
 
     public interface IZarzadzajUzytkownikamiPresenter
     {
+        #region Adam Popławski
+        bool ZmienStatusUzytkownika(Status status);
+        #endregion
+
         #region Maciej Skałba
         //Iteracja 1
         ActionResult WyswietlFormularzEdycjiKontaAktualnegoUzytkownika(int uzytkownikId);

@@ -2,8 +2,18 @@
 {
     using System.Collections.Generic;
 
+    public enum Status
+    {
+        Zablokowany,
+        Aktywny
+    }
+
     public interface IUzytkownikModel
     {
+        #region Adam Popławski
+        bool ZmienStatusUzytkownika(Status status); 
+        #endregion
+
         #region Maciej Skałba
         //Iteracja 1
         bool ZapiszKarteKredytowa(int uzytkownikId, KartaKredytowaEntity entity);
